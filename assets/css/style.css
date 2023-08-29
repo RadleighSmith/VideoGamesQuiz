@@ -61,7 +61,21 @@ body {
     justify-content: space-evenly;
 }
 
-.drpdown-btn {
+/* Button Styling */
+
+.btn {
     margin: 10px;
     padding: 10px;
+    background-color: #ffffff;
+    border: #000000 solid 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: #7CB9E8;
 }
