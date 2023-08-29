@@ -1,5 +1,7 @@
 body {
     background-color: #7CB9E8;
+    background-image: url(../images/background.png);
+    background-size: cover;
 }
 
 * {
@@ -9,6 +11,8 @@ body {
     padding: 0;
 }
 
+/* Quiz area flexbox */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -17,6 +21,7 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
 
 .quiz-area {
     background-color: #ffffff;
