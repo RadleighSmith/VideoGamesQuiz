@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Syne+Mono&display=swap');
+
 body {
     background-color: #7CB9E8;
     background-image: url(../images/background.png);
     background-size: cover;
+    font-size: 1.2rem;
 }
 
 * {
     box-sizing: border-box;
-    /* font-family: ; */
+    font-family: 'Syne Mono', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+/* Genreral Rules */
+
+.center {
+    width: 100%;
+    text-align: center;
 }
 
 /* Quiz area flexbox */
@@ -24,14 +34,34 @@ body {
 
 
 .quiz-area {
-    background-color: #ffffff;
+    background-color: #feffc3;
     height: 70vh;
     width: 70vw;
-    border: 1px solid #000000;
-    border-radius: 5px;
+    border: 5px solid #000000;
+    border-radius: 25px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Quiz heading and content styling */
+
+#heading {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.quiz-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.drpdown-btn {
+    margin: 10px;
+    padding: 10px;
 }
