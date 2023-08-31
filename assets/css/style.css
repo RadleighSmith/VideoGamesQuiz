@@ -63,6 +63,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 /* Game Page Styling */
@@ -77,8 +78,8 @@ header {
 
 #quiz-question {
     margin: 0 auto;
-    max-width: 90%;
-    min-width: 90%;
+    width: 90%;
+    height: 40%;
     padding: 20px;
     background-color: #ffffff;
     border: 5px solid #000000;
@@ -116,7 +117,7 @@ header {
 
 #answer-counters {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 20px;
 }
