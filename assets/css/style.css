@@ -72,6 +72,17 @@ header {
     width: 100%;
 }
 
+/* Instructions Styling */
+
+.instructions-content {
+    background-color: #ffffff;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+
 /* Game Page Styling */
 
 #question-number {
