@@ -65,7 +65,6 @@ header {
     justify-content: space-evenly;
 }
 
-
 /* Game Page Styling */
 
 #question-number {
@@ -111,6 +110,47 @@ header {
     cursor: pointer;
     transform: translateY(-2px);
     background-color: #7CB9E8;
+}
+
+/* Answer Counter styling */
+
+#answer-counters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.counter-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.correct-circle {
+    background-color: green;
+}
+
+.incorrect-circle {
+    background-color: red;
+}
+
+.counter-circle span {
+    color: white;
+    font-weight: bold;
 }
 
 
