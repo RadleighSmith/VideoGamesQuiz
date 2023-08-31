@@ -4,7 +4,11 @@ body {
     background-color: #7CB9E8;
     background-image: url(../images/background.png);
     background-size: cover;
+    background-repeat: no-repeat;
     font-size: 1.2rem;
+    overflow: hidden;
+
+
 }
 
 * {
@@ -14,11 +18,24 @@ body {
     padding: 0;
 }
 
-/* Genreral Rules */
+/* General Rules */
 
 .center {
     width: 100%;
     text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    padding-top: 40px;
 }
 
 /* Quiz area flexbox */
@@ -27,7 +44,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
     width: 100vw;
 }
@@ -46,13 +62,7 @@ body {
     align-items: center;
 }
 
-/* Quiz heading and content styling */
-
-#heading {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
+/* Quiz content styling */
 
 .quiz-content {
     flex: 1;
