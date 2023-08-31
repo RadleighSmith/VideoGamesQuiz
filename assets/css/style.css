@@ -31,6 +31,11 @@ p {
     font-family: 'Manrope', sans-serif;
 }
 
+.border {
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+
 /* Header */
 
 header {
@@ -72,8 +77,6 @@ header {
     width: 30%;
     margin: 0 auto;
     background-color: #ffffff;
-    border: 5px solid #000000;
-    border-radius: 10px;
 }
 
 #quiz-question {
@@ -98,8 +101,6 @@ header {
     padding: 10px;
     margin: 30px;
     text-align: left;
-    border: 5px solid #000000;
-    border-radius: 10px;
 
     font-family: 'Manrope', sans-serif;
     text-decoration: none;
@@ -126,9 +127,7 @@ header {
     display: flex;
     align-items: center;
     background-color: white;
-    border: 5px solid black;
     padding: 10px;
-    border-radius: 10px;
 }
 
 .counter-circle {
