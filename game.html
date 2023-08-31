@@ -11,21 +11,26 @@
     <header class="title">
       <img src="assets/images/main-heading.png" alt="Video Games Quiz" />
     </header>
-    <div class="container">
-      <div class="quiz-area">
-        <div class="content-area">
-          <div>Question Number</div>
-          <div>Question</div>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+    <div class="quiz-area">
+      <div class="content-area">
+        <!-- Question Area -->
+        <div id="question-number" class="center">
+          <h3>Question Number</h3>
+          <h3>1/10</h3>
+        </div>
+        <div id="quiz-question" class="center spacing-left spacing-right">
+          <h3>What is the name of the very first video game evented?</h3>
+          <ul class="quiz-options">
+            <li>1. Pong</li>
+            <li>2. Tennis for Two</li>
+            <li>3. Space Invadors</li>
+            <li>4. Pacman</li>
           </ul>
-          <div>
-            <span>Correct answers</span>
-            <span>Incorrect answers</span>
-          </div>
+        </div>
+        <!-- Answer Counter -->
+        <div id="answer-counters">
+          <span id="correct">Correct answers</span>
+          <span id="incorrect">Incorrect answers</span>
         </div>
       </div>
     </div>
