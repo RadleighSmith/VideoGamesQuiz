@@ -118,7 +118,7 @@ header {
     background-color: #b074ca;
 }
 
-.quiz-option:hover {
+.answers:hover {
     cursor: pointer;
     transform: translateY(-2px);
     background-color: #7CB9E8;
