@@ -9,5 +9,11 @@ fetch("https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=mu
     })
     .then(databaseQuestions => {
         console.log(databaseQuestions.results);
-    })
+        databaseQuestions.results.map(databaseQuestions => {
+            const displayQuestion = {
+                question: databaseQuestions.question
+            };
+            console.log(displayQuestion);
+        });
+    });
 
