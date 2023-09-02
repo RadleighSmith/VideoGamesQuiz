@@ -13,15 +13,19 @@
       <img src="assets/images/main-heading.png" alt="Video Games Quiz" />
     </header>
 
-    <!-- Quiz Selection area -->
+    <!-- Quiz Selection homepage -->
     <div class="container">
       <div class="content-area">
         <div class="center">
-          <a class="btn" href="instructions.html" aria-label="Instructions"
+          <a
+            id="intructions-btn-homepage"
+            class="btn"
+            href="#"
+            aria-label="Instructions"
             >Instructions</a
           >
         </div>
-        <div class="center">
+        <div class="quiz-homepage center">
           <h3>Choose how many questions</h3>
           <select id="question-choice" class="center btn">
             <option id="10">10</option>
@@ -29,7 +33,7 @@
             <option id="20">20</option>
           </select>
         </div>
-        <div class="center">
+        <div class="quiz-homepage center">
           <h3>Choose your difficulty</h3>
           <select id="difficulty-choice" class="center btn">
             <option id="easy">Easy</option>
@@ -37,13 +41,16 @@
             <option id="hard">Hard</option>
           </select>
         </div>
-        <div class="center">
+        <div class="quiz-homepage center">
           <a class="btn" id="submit" href="#" aria-label="Start">Start</a>
         </div>
 
         <!-- Instructions Content Area -->
 
-        <div class="instructions-content border center hide">
+        <div
+          id="instruction-page"
+          class="instructions-content border center hide"
+        >
           <h2>Instructions:</h2>
           <p class="spacing-top">
             From the drop-down menus, please select how many questions you would
@@ -58,7 +65,7 @@
           </p>
           <p class="spacing-top">Score as many as you can! Good Luck!</p>
         </div>
-        <div class="center hide">
+        <div id="instruction-btn" class="center hide">
           <a class="btn" href="#" aria-label="Return">Return</a>
         </div>
 
