@@ -1,6 +1,8 @@
 // Homepage
 const instructionsBtnHomepage = document.getElementById("intructions-btn-homepage");
 const quizHomepageElements = document.querySelectorAll(".quiz-homepage");
+const questChoice = document.getElementById("question-choice");
+const diffChoice = document.getElementById("difficulty-choice");
 const startButton = document.getElementById("submit");
 // Instructions Page
 const instructionsPage = document.getElementById("instruction-page");
@@ -35,10 +37,7 @@ instructionBtn.addEventListener("click", function () {
 // Trivia Database API
 /** Function to construct the Quiz API URL based on user-selected options */
 
-function getQuestions() {
-    const questChoice = document.getElementById("question-choice");
-    const diffChoice = document.getElementById("difficulty-choice");
-
+function getQuestionData() {
     const quest = questChoice.options[questChoice.selectedIndex].id;
     const diff = diffChoice.options[diffChoice.selectedIndex].id;
 
@@ -52,7 +51,7 @@ function getQuestions() {
  * hiding the quiz selector homepage and showing the game page */
 function startGame() {
 
-    getQuestions();
+    getQuestionsData();
 
     quizHomepageElements.forEach(function (game) {
         game.classList.add("hide");
