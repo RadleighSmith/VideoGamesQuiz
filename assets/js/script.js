@@ -37,7 +37,7 @@ instructionBtn.addEventListener("click", function () {
 // Trivia Database API
 /** Function to construct the Quiz API URL based on user-selected options */
 
-function getQuestionData() {
+function getQuestionsData() {
     const quest = questChoice.options[questChoice.selectedIndex].id;
     const diff = diffChoice.options[diffChoice.selectedIndex].id;
 
