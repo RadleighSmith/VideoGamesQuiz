@@ -36,6 +36,10 @@ p {
     border-radius: 10px;
 }
 
+.hide {
+    display: none;
+}
+
 /* Header */
 
 header {
@@ -47,7 +51,7 @@ header {
 
 /* Quiz area flexbox */
 
-.quiz-area {
+.container {
     margin: 0 auto;
     background-color: #feffc3;
     height: 70vh;
@@ -57,8 +61,6 @@ header {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Quiz content styling */
