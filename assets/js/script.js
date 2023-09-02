@@ -1,8 +1,17 @@
-const question = document.getElementById("question");
-const answers = Array.from(document.getElementsByClassName("answers"));
+// Homepage
+const instructionsBtnHomepage = document.getElementById("intructions-btn-homepage");
+const quizHomepageElements = document.querySelectorAll(".quiz-homepage");
 const submit = document.getElementById("submit");
 const questChoice = document.getElementById("question-choice");
 const diffChoice = document.getElementById("difficulty-choice");
+// Instructions Page
+const instructionsPage = document.getElementById("instruction-page");
+const instructionBtn = document.getElementById("instruction-btn");
+
+// Quiz Game Page
+
+const question = document.getElementById("question");
+const answers = Array.from(document.getElementsByClassName("answers"));
 
 // Trivia Database API
 
