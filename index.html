@@ -64,7 +64,47 @@
 
         <!-- Game Content Area -->
 
+        <div id="question-number" class="center border hide">
+          <h3>Question Number</h3>
+          <h3>1/10</h3>
+        </div>
+        <div id="question" class="center hide">
+          <h3>What is the name of the very first video game evented?</h3>
+          <div class="quiz-options-grid spacing-top">
+            <p class="answers border" data-answer="1">1. Pong</p>
+            <p class="answers border" data-answer="2">2. Tennis for Two</p>
+            <p class="answers border" data-answer="3">3. Space Invaders</p>
+            <p class="answers border" data-answer="4">4. Pacman</p>
+          </div>
+        </div>
+        <!-- Answer Counters for quiz -->
+        <div id="answer-counters-area" class="hide">
+          <div id="answer-counters">
+            <div class="counter border">
+              <div class="counter-circle correct-circle">
+                <span id="correct-count">35</span>
+              </div>
+              <span>Correct</span>
+            </div>
+            <div class="counter border">
+              <div class="counter-circle incorrect-circle">
+                <span id="incorrect-count">35</span>
+              </div>
+              <span>Incorrect</span>
+            </div>
+          </div>
+        </div>
+
         <!-- Results Content Area -->
+
+        <div class="results-content border hide">
+          <h3>Well Done you completed the Quiz!</h3>
+          <h2>You Scored: 0/10</h2>
+        </div>
+        <div class="center hide">
+          <a class="btn" href="game.html" aria-label="Replay">Replay</a>
+          <a class="btn" href="index.html" aria-label="Return">Return Home</a>
+        </div>
       </div>
     </div>
     <script src="assets/js/script.js"></script>
