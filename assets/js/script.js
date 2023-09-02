@@ -1,6 +1,7 @@
 // Homepage
 const instructionsBtnHomepage = document.getElementById("intructions-btn-homepage");
 const quizHomepageElements = document.querySelectorAll(".quiz-homepage");
+const startButton = document.getElementById("submit");
 // Instructions Page
 const instructionsPage = document.getElementById("instruction-page");
 const instructionBtn = document.getElementById("instruction-btn");
@@ -42,3 +43,31 @@ function getQuestions() {
     console.log("Quiz API URL:", gameUrl);
 
 }
+
+/** Function to start the quiz, calling the get questions function and 
+ * hiding the quiz selector homepage and showing the game page */
+function startGame() {
+
+    getQuestions();
+
+    const quizHomepageElements = document.querySelectorAll(".quiz-homepage");
+    quizHomepageElements.forEach(function (game) {
+        game.classList.add("hide");
+    });
+
+    const instructionsBtnHomepage = document.getElementById("intructions-btn-homepage");
+    instructionsBtnHomepage.classList.add("hide");
+
+    const gameContentArea = document.getElementById("question-number");
+    gameContentArea.classList.remove("hide");
+
+    const gameQuizArea = document.getElementById("question");
+    gameQuizArea.classList.remove("hide");
+
+    const answerCountersArea = document.getElementById("answer-counters-area");
+    answerCountersArea.classList.remove("hide");
+}
+
+startButton.addEventListener('click', function () {
+    startGame();
+});
