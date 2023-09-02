@@ -13,6 +13,17 @@ const instructionBtn = document.getElementById("instruction-btn");
 const question = document.getElementById("question");
 const answers = Array.from(document.getElementsByClassName("answers"));
 
+/** Event Listener to show instructions page and hide quiz selection homepage */
+instructionsBtnHomepage.addEventListener("click", function () {
+    instructionsBtnHomepage.classList.add("hide");
+    quizHomepageElements.forEach(function (instructions) {
+        instructions.classList.add("hide");
+    });
+
+    instructionsPage.classList.remove("hide");
+    instructionBtn.classList.remove("hide");
+});
+
 // Trivia Database API
 
 function getQuestions(start) {
