@@ -10,6 +10,9 @@ const startButton = document.getElementById("submit");
 const gameContentArea = document.getElementById("question-number");
 const gameQuizArea = document.getElementById("question");
 const answerCountersArea = document.getElementById("answer-counters-area");
+const resultsPage = document.getElementById("results");
+const resultsPageBtns = document.getElementById("results-page-btns");
+const score = document.getElementById("score");
 
 
 let currentQuestion = {};
@@ -82,9 +85,11 @@ function getGameData() {
             });
         });
 }
-
+/** Function to start the game when the user clicks start, it will reset all 
+ * the hud elements to 0 */
 function startGame() {
 
+    totalQuestions = [...questions];
     questionCounter = 0;
     correctCount = 0;
     incorrectCount = 0;
@@ -103,3 +108,29 @@ function startGame() {
 startButton.addEventListener('click', function () {
     startGame();
 });
+
+/** Function to get the next question  or end the game once no questions are left */
+
+function getNextQuestion() {
+
+    if (totalQuestions.length == 0) {
+        gameContentArea.classList.add("hide");
+        gameQuizArea.classList.add("hide");
+        answerCountersArea.classList.add("hide");
+        resultsPage.classList.remove("hide");
+        resultsPageBtns.classList.remove("hide");
+        score.innerHTML = (`You Scored: ${correctCount}/${quest} `);
+    } else {
+        questionCounter++;
+        questionCounter.innerText = (`${questionCount}/${quant}`);
+        let questIndex = math.floor(Math.random() * totalQuestions.length);
+        currentQuestion = totalQuestions[questionIndex];
+        question.innerHTML = currentQuestion.question;
+        answers.forEach(answer => {
+            let number = answer.dataset["answer"];
+            answer.innerHTML = currentQuestion["choice" + number];
+        });
+        totalQuestions.splice(questionIndex, 1);
+        questions.splice(questionIndex, 1);
+    }
+}
