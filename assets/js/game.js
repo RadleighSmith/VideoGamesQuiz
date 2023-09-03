@@ -136,4 +136,6 @@ function getNextQuestion() {
         questions.splice(questionIndex, 1);
     }
 }
-
+startButton.addEventListener('click', () => {
+    getGameData();
+});
