@@ -8,7 +8,6 @@ const questChoice = document.getElementById("question-choice");
 const diffChoice = document.getElementById("difficulty-choice");
 const startButton = document.getElementById("submit");
 const gameContentArea = document.getElementById("question-number");
-const gameQuizArea = document.getElementById("question");
 const answerCountersArea = document.getElementById("answer-counters-area");
 const resultsPage = document.getElementById("results");
 const resultsPageBtns = document.getElementById("results-page-btns");
@@ -107,7 +106,6 @@ function startGame() {
     instructionsBtnHomepage.classList.add("hide");
     gameContentArea.classList.remove("hide");
     question.classList.remove("hide");
-    gameQuizArea.classList.remove("hide");
     answerCountersArea.classList.remove("hide");
 }
 
@@ -118,7 +116,6 @@ function getNextQuestion() {
 
     if (totalQuestions.length == 0) {
         gameContentArea.classList.add("hide");
-        gameQuizArea.classList.add("hide");
         answerCountersArea.classList.add("hide");
         resultsPage.classList.remove("hide");
         resultsPageBtns.classList.remove("hide");
@@ -141,4 +138,5 @@ function getNextQuestion() {
 }
 startButton.addEventListener('click', () => {
     getGameData();
+
 });
