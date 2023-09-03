@@ -4,6 +4,9 @@ const instructionsBtnHomepage = document.getElementById("intructions-btn-homepag
 const quizHomepageElements = document.querySelectorAll(".quiz-homepage");
 const instructionsPage = document.getElementById("instruction-page");
 const instructionBtn = document.getElementById("instruction-btn");
+const questChoice = document.getElementById("question-choice");
+const diffChoice = document.getElementById("difficulty-choice");
+const startButton = document.getElementById("submit");
 
 
 let currentQuestion = {};
@@ -34,3 +37,18 @@ instructionBtn.addEventListener("click", function () {
         instructions.classList.remove("hide");
     });
 });
+
+// Trivia Database API
+/** Function to construct the Quiz API URL based on user-selected options */
+
+function getQuestionsData() {
+    const quest = questChoice.options[questChoice.selectedIndex].id;
+    const diff = diffChoice.options[diffChoice.selectedIndex].id;
+
+    return gameUrl = `https://opentdb.com/api.php?amount=${quest}&category=15&difficulty=${diff}&type=multiple`;
+}
+
+startButton.addEventListener('click', function () {
+    console.log(getQuestionsData());
+})
+
