@@ -14,6 +14,10 @@ const answerCountersArea = document.getElementById("answer-counters-area");
 
 let questions = [];
 
+// Results Page
+
+const resultsPage = document.getElementById("results");
+
 /** Event Listener to show instructions page and hide quiz selection homepage */
 instructionsBtnHomepage.addEventListener("click", function () {
     instructionsBtnHomepage.classList.add("hide");
