@@ -1,5 +1,6 @@
 const question = document.getElementById("question");
-const answers = Array.from(document.getElementsByClassName("answers"));
+const answerOptions = document.getElementById('answer-area');
+let answers = Array.from(document.getElementsByClassName("answers"));
 const instructionsBtnHomepage = document.getElementById("intructions-btn-homepage");
 const quizHomepageElements = document.querySelectorAll(".quiz-homepage");
 const instructionsPage = document.getElementById("instruction-page");
@@ -92,7 +93,6 @@ function getGameData() {
 /** Function to start the game when the user clicks start, it will reset all 
  * the hud elements to 0 */
 function startGame() {
-
     totalQuestions = [...questions];
     questionCounter = 0;
     correctCount = 0;
@@ -107,13 +107,14 @@ function startGame() {
     gameContentArea.classList.remove("hide");
     question.classList.remove("hide");
     answerCountersArea.classList.remove("hide");
+    const answerElements = answerOptions.querySelectorAll('.answers');
+    answerElements.forEach((element) => {
+        element.classList.remove('hide');
+    });
+
 }
-
-
 /** Function to get the next question  or end the game once no questions are left */
-
 function getNextQuestion() {
-
     if (totalQuestions.length == 0) {
         gameContentArea.classList.add("hide");
         answerCountersArea.classList.add("hide");
@@ -126,8 +127,8 @@ function getNextQuestion() {
         let questIndex = Math.floor(Math.random() * totalQuestions.length);
         currentQuestion = totalQuestions[questIndex];
         question.innerHTML = currentQuestion.question;
-        const answerOptions = document.querySelectorAll('#question .answers');
-        answerOptions.forEach((answer, index) => {
+
+        answers.forEach((answer, index) => {
             let number = answer.dataset["answer"];
             answer.innerHTML = currentQuestion["answers" + number];
         });
