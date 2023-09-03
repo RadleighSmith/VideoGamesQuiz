@@ -47,6 +47,8 @@ function getQuestionsData() {
 
 }
 
+// Add getQuizData function here, which gets the questions and shuffles the answers
+
 /** Function to start the quiz, calling the get questions function and 
  * hiding the quiz selector homepage and showing the game page */
 function startGame() {
@@ -66,3 +68,7 @@ function startGame() {
 startButton.addEventListener('click', function () {
     startGame();
 });
+
+// Add nextQuestion function here which progresses the quiz or stops it if the user has run out of questions
+
+// Add answerResponse function here which will give the user appropriate feedback if they get the question wrong or right
