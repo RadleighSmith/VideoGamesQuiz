@@ -12,6 +12,8 @@ const gameContentArea = document.getElementById("question-number");
 const gameQuizArea = document.getElementById("question");
 const answerCountersArea = document.getElementById("answer-counters-area");
 
+let questions = [];
+
 /** Event Listener to show instructions page and hide quiz selection homepage */
 instructionsBtnHomepage.addEventListener("click", function () {
     instructionsBtnHomepage.classList.add("hide");
@@ -41,19 +43,43 @@ function getQuestionsData() {
     const quest = questChoice.options[questChoice.selectedIndex].id;
     const diff = diffChoice.options[diffChoice.selectedIndex].id;
 
-    const gameUrl = `https://opentdb.com/api.php?amount=${quest}&category=15&difficulty=${diff}&type=multiple`;
-
-    console.log("Quiz API URL:", gameUrl);
-
+    return gameUrl = `https://opentdb.com/api.php?amount=${quest}&category=15&difficulty=${diff}&type=multiple`;
 }
 
 // Add getQuizData function here, which gets the questions and shuffles the answers
+
+function getQuizData() {
+
+    const gameUrl = getQuestionsData();
+
+    fetch(gameUrl)
+        .then(res => res.json())
+        .then(loadedQuestions => {
+            console.log(loadedQuestions.results);
+            questions = loadedQuestions.results.map(loadedQuestion => {
+                const formattedQuestion = {
+                    question: loadedQuestion.question
+                };
+                const answerChoices = [...loadedQuestion.incorrect_answers];
+                formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
+                answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer);
+
+                answerChoices.forEach((choice, index) => {
+                    formattedQuestion["choice" + (index + 1)] = choice;
+                });
+
+                return formattedQuestion;
+            });
+        });
+}
+
+
 
 /** Function to start the quiz, calling the get questions function and 
  * hiding the quiz selector homepage and showing the game page */
 function startGame() {
 
-    getQuestionsData();
+    getQuizData();
 
     quizHomepageElements.forEach(function (game) {
         game.classList.add("hide");
