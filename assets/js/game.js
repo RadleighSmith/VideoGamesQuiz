@@ -83,6 +83,11 @@ function getGameData() {
 
                 return formattedQuestion;
             });
+            if (questions.length > 0) {
+                startGame();
+            } else {
+                console.error("Error Loading Quiz");
+            }
         });
 }
 /** Function to start the game when the user clicks start, it will reset all 
@@ -131,3 +136,4 @@ function getNextQuestion() {
         questions.splice(questionIndex, 1);
     }
 }
+
