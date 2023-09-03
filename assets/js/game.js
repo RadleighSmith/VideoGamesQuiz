@@ -93,7 +93,7 @@ function startGame() {
     questionCounter = 0;
     correctCount = 0;
     incorrectCount = 0;
-    getGameData();
+    getNextQuestion();
 
     quizHomepageElements.forEach(function (game) {
         game.classList.add("hide");
@@ -105,9 +105,6 @@ function startGame() {
     answerCountersArea.classList.remove("hide");
 }
 
-startButton.addEventListener('click', function () {
-    startGame();
-});
 
 /** Function to get the next question  or end the game once no questions are left */
 
