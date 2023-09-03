@@ -82,3 +82,24 @@ function getGameData() {
             });
         });
 }
+
+function startGame() {
+
+    questionCounter = 0;
+    correctCount = 0;
+    incorrectCount = 0;
+    getGameData();
+
+    quizHomepageElements.forEach(function (game) {
+        game.classList.add("hide");
+    });
+
+    instructionsBtnHomepage.classList.add("hide");
+    gameContentArea.classList.remove("hide");
+    gameQuizArea.classList.remove("hide");
+    answerCountersArea.classList.remove("hide");
+}
+
+startButton.addEventListener('click', function () {
+    startGame();
+});
