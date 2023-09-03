@@ -78,7 +78,7 @@ function getGameData() {
                 answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer);
 
                 answerChoices.forEach((answers, index) => {
-                    formattedQuestion["answers" + (answers + 1)] = answers;
+                    formattedQuestion["answers" + (index + 1)] = answers;
                 });
 
                 return formattedQuestion;
@@ -106,6 +106,7 @@ function startGame() {
 
     instructionsBtnHomepage.classList.add("hide");
     gameContentArea.classList.remove("hide");
+    question.classList.remove("hide");
     gameQuizArea.classList.remove("hide");
     answerCountersArea.classList.remove("hide");
 }
@@ -121,19 +122,21 @@ function getNextQuestion() {
         answerCountersArea.classList.add("hide");
         resultsPage.classList.remove("hide");
         resultsPageBtns.classList.remove("hide");
-        score.innerHTML = (`You Scored: ${correctCount}/${quest} `);
+        score.innerHTML = (`You Scored: ${correctCount}/${questChoice.value} `);
     } else {
         questionCounter++;
-        questionCounter.innerText = (`${questionCount}/${quant}`);
-        let questIndex = math.floor(Math.random() * totalQuestions.length);
-        currentQuestion = totalQuestions[questionIndex];
+        questionCounter.innerText = (`${questionCounter}/${questChoice.value}`);
+        let questIndex = Math.floor(Math.random() * totalQuestions.length);
+        currentQuestion = totalQuestions[questIndex];
         question.innerHTML = currentQuestion.question;
-        answers.forEach(answer => {
+        const answerOptions = document.querySelectorAll('#question .answers');
+        answerOptions.forEach((answer, index) => {
             let number = answer.dataset["answer"];
-            answer.innerHTML = currentQuestion["choice" + number];
+            answer.innerHTML = currentQuestion["answers" + number];
         });
-        totalQuestions.splice(questionIndex, 1);
-        questions.splice(questionIndex, 1);
+
+        totalQuestions.splice(questIndex, 1);
+        questions.splice(questIndex, 1);
     }
 }
 startButton.addEventListener('click', () => {
