@@ -13,7 +13,7 @@ const answerCountersArea = document.getElementById("answer-counters-area");
 const resultsPage = document.getElementById("results");
 const resultsPageBtns = document.getElementById("results-page-btns");
 const score = document.getElementById("score");
-
+const answerElements = answerOptions.querySelectorAll('.answers');
 
 let currentQuestion = {};
 let questionCounter = 0;
@@ -107,7 +107,6 @@ function startGame() {
     gameContentArea.classList.remove("hide");
     question.classList.remove("hide");
     answerCountersArea.classList.remove("hide");
-    const answerElements = answerOptions.querySelectorAll('.answers');
     answerElements.forEach((element) => {
         element.classList.remove('hide');
     });
@@ -118,8 +117,15 @@ function getNextQuestion() {
     if (totalQuestions.length == 0) {
         gameContentArea.classList.add("hide");
         answerCountersArea.classList.add("hide");
+        question.classList.add("hide");
+        answerElements.forEach((element) => {
+            element.classList.add('hide');
+        });
         resultsPage.classList.remove("hide");
         resultsPageBtns.classList.remove("hide");
+
+
+
         score.innerHTML = (`You Scored: ${correctCount}/${questChoice.value} `);
     } else {
         questionCounter++;
@@ -159,7 +165,7 @@ function answerResponse() {
             }
             setTimeout(() => {
                 getNextQuestion();
-            }, 2000);
+            }, 1000);
         });
     });
 }
