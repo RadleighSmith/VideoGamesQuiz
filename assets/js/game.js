@@ -135,9 +135,31 @@ function getNextQuestion() {
 
         totalQuestions.splice(questIndex, 1);
         questions.splice(questIndex, 1);
+        acceptInput = true;
     }
+    answerResponse();
 }
 startButton.addEventListener('click', () => {
     getGameData();
 
 });
+
+function answerResponse() {
+    answers.forEach(answer => {
+        answer.addEventListener("click", function (event) {
+            const selectedAnswer = event.target;
+            if (!acceptInput) return;
+            acceptInput = false;
+            const selectedAnswerChoice = selectedAnswer.dataset["answer"];
+
+            if (selectedAnswerChoice == currentQuestion.answer) {
+                alert("Correct!");
+            } else {
+                alert("Incorrect!");
+            }
+            setTimeout(() => {
+                getNextQuestion();
+            }, 2000);
+        });
+    });
+}
