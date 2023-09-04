@@ -160,8 +160,12 @@ function answerResponse() {
             const selectedAnswerChoice = selectedAnswer.dataset["answer"];
 
             if (selectedAnswerChoice == currentQuestion.answer) {
+                correctCount++;
+                document.getElementById("correct-count").textContent = correctCount;
                 alert("Correct!");
             } else {
+                incorrectCount++;
+                document.getElementById("incorrect-count").textContent = incorrectCount;
                 alert("Incorrect!");
             }
             setTimeout(() => {
