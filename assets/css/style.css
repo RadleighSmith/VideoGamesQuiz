@@ -193,3 +193,64 @@ p {
     transform: translateY(-2px);
     background-color: #7CB9E8;
 }
+
+
+/* Media Queries */
+
+/* For screen sizes 750px and below */
+@media screen and (max-width: 750px) {
+
+    .instructions-content {
+        width: 90%;
+
+    }
+}
+
+/* For screen sizes 600px and below */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+}
+
+/* for screen sizes 500px and below */
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        height: 80vh;
+        width: 80vw;
+    }
+
+    .quiz-options-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+/* for screen sizes 400px and below */
+
+@media screen and (max-width: 400px) {
+    .container {
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .counter {
+        display: block;
+    }
+
+    .counter-circle {
+        margin: 0 auto;
+    }
+
+    #question-number {
+        width: 60%;
+    }
+}
