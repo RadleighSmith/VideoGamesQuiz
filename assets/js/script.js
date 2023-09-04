@@ -16,6 +16,7 @@ const answerCountersArea = document.getElementById("answer-counters-area");
 const resultsPage = document.getElementById("results");
 const resultsBtns = document.getElementById("results-page-btns");
 
+let answers = Array.from(document.getElementsByClassName("answer"));
 let questions = [];
 let acceptInput = false;
 let currentQuestion = {};
@@ -83,8 +84,7 @@ function getQuizData() {
 /** Function to start the quiz, calling the get questions function and 
  * hiding the quiz selector homepage and showing the game page */
 function startGame() {
-
-    totalQuestions = [...quetions];
+    totalQuestions = [...questions];
     questionCount = 0;
     getQuizData();
 
@@ -105,28 +105,48 @@ startButton.addEventListener('click', function () {
 // Add nextQuestion function here which progresses the quiz or stops it if the user has run out of questions
 
 function getNextQuestion() {
-
-    if (totalQuestions.length === 0) {
+    if (totalQuestions.length == 0) {
         gameContentArea.classList.add("hide");
         gameQuizArea.classList.add("hide");
         answerCountersArea.classList.add("hide");
         resultsPage.classList.remove("hide");
-        resultsBtns.classList.remove("hide");;
-        //add final score here
+        resultsBtns.classList.remove("hide");
+        // Add final score here
     } else {
         questionCount++;
-        questionCounter.innerText = (`${questionCount}/ ${quest}`);
+        questionCounter.innerText = (`${questionCount}/${questChoice.value}`);
         let questionIndex = Math.floor(Math.random() * totalQuestions.length);
         currentQuestion = totalQuestions[questionIndex];
-        question.innerHTML = currentQuestion.question;
+        gameQuizArea.innerHTML = currentQuestion.question;
         answers.forEach(answer => {
             let number = answer.dataset["answer"];
-            answer.innerHTML = currentQuestion["choice " + number];
+            answer.innerHTML = currentQuestion["choice" + number];
         });
         totalQuestions.splice(questionIndex, 1);
         questions.splice(questionIndex, 1);
         acceptInput = true;
     }
+    answerResponse();
 }
 
 // Add answerResponse function here which will give the user appropriate feedback if they get the question wrong or right
+
+function answerResponse() {
+    answers.forEach(answer => {
+        answer.addEventListener("click", function (event) {
+            const selectedAnswer = event.target;
+            if (!acceptInput) return;
+            acceptInput = false;
+            const selectedAnswerChoice = selectedAnswer.dataset["answer"];
+
+            if (selectedAnswerChoice == currentQuestion.answer) {
+                alert("Correct!");
+            } else {
+                alert("Incorrect!");
+            }
+            setTimeout(() => {
+                getNextQuestion();
+            }, 2000);
+        });
+    });
+}
