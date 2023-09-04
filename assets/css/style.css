@@ -216,6 +216,10 @@ p {
         font-size: 1rem;
     }
 
+    #question-number {
+        width: 60%;
+    }
+
 }
 
 /* for screen sizes 500px and below */
@@ -248,9 +252,5 @@ p {
 
     .counter-circle {
         margin: 0 auto;
-    }
-
-    #question-number {
-        width: 60%;
     }
 }
