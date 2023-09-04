@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Syne+Mono&display=swap');
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: #7CB9E8;
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 1.2rem;
     overflow: hidden;
-    height: 100vh;
 }
 
 * {
@@ -42,11 +44,8 @@ p {
 
 /* Header */
 
-header {
-    text-align: center;
+#title img {
     max-width: 100%;
-    height: auto;
-    padding-top: 40px;
 }
 
 /* Quiz area flexbox */
