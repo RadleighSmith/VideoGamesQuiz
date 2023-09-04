@@ -19,7 +19,7 @@ let currentQuestion = {};
 let questionCounter = 0;
 let correctCount = 0;
 let incorrectCount = 0;
-let acceptingAnswers = true;
+let acceptInput = true;
 
 let questions = [];
 
