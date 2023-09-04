@@ -238,7 +238,7 @@ p {
 
 @media screen and (max-width: 400px) {
     .container {
-        height: 90vh;
+        height: 85vh;
         width: 90vw;
     }
 
