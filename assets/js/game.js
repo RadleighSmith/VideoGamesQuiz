@@ -9,6 +9,7 @@ const questChoice = document.getElementById("question-choice");
 const diffChoice = document.getElementById("difficulty-choice");
 const startButton = document.getElementById("submit");
 const gameContentArea = document.getElementById("question-number");
+const questionCounterElement = document.getElementById("question-counter");
 const answerCountersArea = document.getElementById("answer-counters-area");
 const resultsPage = document.getElementById("results");
 const resultsPageBtns = document.getElementById("results-page-btns");
@@ -129,7 +130,7 @@ function getNextQuestion() {
         score.innerHTML = (`You Scored: ${correctCount}/${questChoice.value} `);
     } else {
         questionCounter++;
-        questionCounter.innerText = (`${questionCounter}/${questChoice.value}`);
+        questionCounterElement.innerText = (`${questionCounter}/${questChoice.value}`);
         let questIndex = Math.floor(Math.random() * totalQuestions.length);
         currentQuestion = totalQuestions[questIndex];
         question.innerHTML = currentQuestion.question;
