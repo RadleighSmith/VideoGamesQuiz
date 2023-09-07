@@ -100,34 +100,27 @@ function startGame() {
     correctCount = 0;
     incorrectCount = 0;
     getNextQuestion();
-
-    quizHomepageElements.forEach(function (game) {
-        game.classList.add("hide");
-    });
-
-    instructionsBtnHomepage.classList.add("hide");
-    gameContentArea.classList.remove("hide");
-    question.classList.remove("hide");
-    answerCountersArea.classList.remove("hide");
-    answerElements.forEach((element) => {
-        element.classList.remove('hide');
-    });
+    toggleDisplay([
+        instructionsBtnHomepage,
+        gameContentArea,
+        question,
+        answerOptions,
+        answerCountersArea,
+        ...quizHomepageElements
+    ]);
 
 }
 /** Function to get the next question  or end the game once no questions are left */
 function getNextQuestion() {
     if (totalQuestions.length == 0) {
-        gameContentArea.classList.add("hide");
-        answerCountersArea.classList.add("hide");
-        question.classList.add("hide");
-        answerElements.forEach((element) => {
-            element.classList.add('hide');
-        });
-        resultsPage.classList.remove("hide");
-        resultsPageBtns.classList.remove("hide");
-
-
-
+        toggleDisplay([
+            gameContentArea,
+            answerOptions,
+            answerCountersArea,
+            question,
+            resultsPage,
+            resultsPageBtns,
+        ]);
         score.innerHTML = (`You Scored: ${correctCount}/${questChoice.value} `);
     } else {
         questionCounter++;
