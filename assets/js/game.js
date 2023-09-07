@@ -136,6 +136,8 @@ function getNextQuestion() {
     }
     answerResponse();
 }
+// Event Listener to start game
+
 startButton.addEventListener('click', () => {
     getGameData();
 
@@ -147,16 +149,24 @@ function answerResponse() {
             const selectedAnswer = event.target;
             if (!acceptInput) return;
             acceptInput = false;
-            const selectedAnswerChoice = selectedAnswer.dataset["answer"];
+            const selectedAnswerChoice = selectedAnswer.dataset.answer;
 
             if (selectedAnswerChoice == currentQuestion.answer) {
                 correctCount++;
                 document.getElementById("correct-count").textContent = correctCount;
-                alert("Correct!");
+                Swal.fire(
+                    "You're Correct",
+                    'You got it right!',
+                    'success',
+                );
             } else {
                 incorrectCount++;
                 document.getElementById("incorrect-count").textContent = incorrectCount;
-                alert("Incorrect!");
+                Swal.fire(
+                    "You're Incorrect",
+                    `The correct answer was ${currentQuestion["answers" + currentQuestion.answer]}`,
+                    'error',
+                );
             }
             setTimeout(() => {
                 getNextQuestion();
