@@ -153,23 +153,31 @@ function answerResponse() {
             if (selectedAnswerChoice == currentQuestion.answer) {
                 correctCount++;
                 document.getElementById("correct-count").textContent = correctCount;
-                Swal.fire(
-                    "You're Correct",
-                    'You got it right!',
-                    'success',
-                );
+                Swal.fire({
+                    position: 'center',
+                    title: "You're Correct",
+                    text: "You got it right!",
+                    icon: 'success',
+                    allowOutsideClick: false,
+                    showConfirmButton: false,
+                    timer: 2500,
+                });
             } else {
                 incorrectCount++;
                 document.getElementById("incorrect-count").textContent = incorrectCount;
-                Swal.fire(
-                    "You're Incorrect",
-                    `The correct answer was ${currentQuestion["answers" + currentQuestion.answer]}`,
-                    'error',
-                );
+                Swal.fire({
+                    position: 'center',
+                    title: "You're Incorrect",
+                    text: `The correct answer was ${currentQuestion["answers" + currentQuestion.answer]}`,
+                    icon: 'error',
+                    allowOutsideClick: false,
+                    showConfirmButton: false,
+                    timer: 2500
+                });
             }
             setTimeout(() => {
                 getNextQuestion();
-            }, 1000);
+            }, 2500);
         });
     });
 }
