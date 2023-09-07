@@ -175,3 +175,13 @@ function answerResponse() {
         });
     });
 }
+
+/** Function to toggle the diplay of divs throughout the game */
+
+function toggleDisplay(elements) {
+    elements.forEach((element) =>
+        element.classList.contains("hide")
+            ? element.classList.remove("hide")
+            : element.classList.add("hide")
+    );
+}
