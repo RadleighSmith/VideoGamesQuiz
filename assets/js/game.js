@@ -53,7 +53,7 @@ function getQuestionsData() {
     const quest = questChoice.options[questChoice.selectedIndex].id;
     const diff = diffChoice.options[diffChoice.selectedIndex].id;
 
-    return gameUrl = `https://opentdb.com/api.php?amount=${quest}&category=15&difficulty=${diff}&type=multiple`;
+    return `https://opentdb.com/api.php?amount=${quest}&category=15&difficulty=${diff}&type=multiple`;
 }
 
 /** Function to retrive the data from the Triva DB using the user-selected options
@@ -63,9 +63,7 @@ function getQuestionsData() {
 
 function getGameData() {
 
-    const gameUrl = getQuestionsData();
-
-    fetch(gameUrl)
+    fetch(getQuestionsData())
         .then(response => response.json())
         .then(loadedQuestions => {
             console.log(loadedQuestions.results);
