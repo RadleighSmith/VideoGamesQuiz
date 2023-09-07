@@ -128,8 +128,8 @@ function getNextQuestion() {
         question.innerHTML = currentQuestion.question;
 
         answers.forEach((answer, index) => {
-            let number = answer.dataset["answer"];
-            answer.innerHTML = currentQuestion["answers" + number];
+            let number = answer.dataset.answer;
+            answer.innerHTML = currentQuestion.answer + number;
         });
 
         totalQuestions.splice(questIndex, 1);
