@@ -1,6 +1,5 @@
 const question = document.getElementById("question");
 const answerOptions = document.getElementById('answer-area');
-let answers = Array.from(document.getElementsByClassName("answers"));
 const instructionsBtnHomepage = document.getElementById("intructions-btn-homepage");
 const quizHomepageElements = document.querySelectorAll(".quiz-homepage");
 const instructionsPage = document.getElementById("instruction-page");
@@ -16,6 +15,8 @@ const resultsPageBtns = document.getElementById("results-page-btns");
 const score = document.getElementById("score");
 const answerElements = answerOptions.querySelectorAll('.answers');
 
+
+let answers = Array.from(document.getElementsByClassName("answers"));
 let currentQuestion = {};
 let questionCounter = 0;
 let correctCount = 0;
