@@ -38,10 +38,6 @@ p {
     border-radius: 10px;
 }
 
-.hide {
-    display: none;
-}
-
 /* Header */
 
 #title img {
@@ -253,4 +249,10 @@ p {
     .counter-circle {
         margin: 0 auto;
     }
+}
+
+/* Hide Rule */
+
+.hide {
+    display: none;
 }
