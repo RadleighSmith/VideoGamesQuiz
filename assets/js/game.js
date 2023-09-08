@@ -14,6 +14,8 @@ const resultsPage = document.getElementById("results");
 const resultsPageBtns = document.getElementById("results-page-btns");
 const score = document.getElementById("score");
 const answerElements = answerOptions.querySelectorAll('.answers');
+const replayBtn = document.getElementById("replay");
+const returnBtn = document.getElementById("return");
 
 
 let answers = Array.from(document.getElementsByClassName("answers"));
@@ -181,6 +183,15 @@ function answerResponse() {
         });
     });
 }
+
+returnBtn.addEventListener("click", function () {
+    toggleDisplay([
+        resultsPage,
+        resultsPageBtns,
+        instructionsBtnHomepage,
+        ...quizHomepageElements,
+    ]);
+});
 
 /** Function to toggle the diplay of divs throughout the game */
 
