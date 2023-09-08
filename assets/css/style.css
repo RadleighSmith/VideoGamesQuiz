@@ -163,7 +163,7 @@ p {
 /* Results Page Styling */
 
 .results-content {
-    margin: 10px;
+    margin: 0 auto;
     text-align: center;
     background-color: #ffffff;
     padding: 10px;
@@ -213,6 +213,9 @@ p {
 
     }
 
+    .results-content {
+        margin: 10px;
+    }
 }
 
 /* For screen sizes 600px and below */
