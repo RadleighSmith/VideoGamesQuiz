@@ -163,10 +163,14 @@ p {
 /* Results Page Styling */
 
 .results-content {
-    margin: 0 auto;
+    margin: 10px;
     text-align: center;
     background-color: #ffffff;
     padding: 10px;
+}
+
+#results-img img {
+    width: 30%;
 }
 
 /* Button Styling */
@@ -193,6 +197,14 @@ p {
 
 /* Media Queries */
 
+/* for screen sizes 900px and below */
+@media screen and (max-width: 900px) {
+
+    #results-img img {
+        width: 60%;
+    }
+}
+
 /* For screen sizes 750px and below */
 @media screen and (max-width: 750px) {
 
@@ -200,6 +212,7 @@ p {
         width: 90%;
 
     }
+
 }
 
 /* For screen sizes 600px and below */

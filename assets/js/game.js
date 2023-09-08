@@ -14,8 +14,9 @@ const resultsPage = document.getElementById("results");
 const resultsPageBtns = document.getElementById("results-page-btns");
 const score = document.getElementById("score");
 const answerElements = answerOptions.querySelectorAll('.answers');
-const replayBtn = document.getElementById("replay");
-const returnBtn = document.getElementById("return");
+const resultsImg = document.getElementById('results-img');
+const replayBtn = document.getElementById('replay');
+const returnBtn = document.getElementById('return');
 
 
 let answers = Array.from(document.getElementsByClassName("answers"));
@@ -116,6 +117,7 @@ function getNextQuestion() {
             answerOptions,
             answerCountersArea,
             question,
+            resultsImg,
             resultsPage,
             resultsPageBtns,
         ]);
@@ -186,6 +188,7 @@ function answerResponse() {
 
 returnBtn.addEventListener("click", () => {
     toggleDisplay([
+        resultsImg,
         resultsPage,
         resultsPageBtns,
         instructionsBtnHomepage,
@@ -196,6 +199,7 @@ returnBtn.addEventListener("click", () => {
 replayBtn.addEventListener("click", () => {
     getGameData();
     toggleDisplay([
+        resultsImg,
         resultsPage,
         resultsPageBtns,
         ...quizHomepageElements,
