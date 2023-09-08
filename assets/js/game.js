@@ -39,7 +39,7 @@ instructionsBtnHomepage.addEventListener("click", () => {
 });
 
 /** Event Listener to return to quiz selection homepage and hide instructions page */
-instructionBtn.addEventListener("click", function () {
+instructionBtn.addEventListener("click", () => {
     toggleDisplay([
         instructionsBtnHomepage,
         instructionsPage,
@@ -146,7 +146,7 @@ startButton.addEventListener('click', () => {
 
 function answerResponse() {
     answers.forEach(answer => {
-        answer.addEventListener("click", function (event) {
+        answer.addEventListener("click", (event) => {
             const selectedAnswer = event.target;
             if (!acceptInput) return;
             acceptInput = false;
@@ -184,7 +184,7 @@ function answerResponse() {
     });
 }
 
-returnBtn.addEventListener("click", function () {
+returnBtn.addEventListener("click", () => {
     toggleDisplay([
         resultsPage,
         resultsPageBtns,
