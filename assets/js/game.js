@@ -193,6 +193,15 @@ returnBtn.addEventListener("click", function () {
     ]);
 });
 
+replayBtn.addEventListener("click", () => {
+    getGameData();
+    toggleDisplay([
+        resultsPage,
+        resultsPageBtns,
+        ...quizHomepageElements,
+        instructionsBtnHomepage,
+    ]);
+});
 /** Function to toggle the diplay of divs throughout the game */
 
 function toggleDisplay(elements) {
