@@ -186,6 +186,8 @@ Testing plays a pivotal role in ensuring the seamless performance and quality of
 
 ## Languages
 
+The quiz game is primarily built using a combination of HTML, CSS, and JavaScript, forming the core structure and functionality of the quiz. JavaScript, in particular, plays a pivotal role in creating dynamic and interactive elements, allowing for real-time feedback and user engagement. Additionally, we utilize external libraries for specific features, enhancing the overall user experience. This blend of web technologies ensures a seamless and responsive gaming experience for players across different devices and platforms.
+
 ## Deployment
 
 ## Media
