@@ -75,8 +75,6 @@ This quiz game is designed for individuals who enjoy testing their general knowl
 
 * As a competitive player, I want to be able to see my overall score and track my progress over time to challenge myself to improve.
 
-### Website Aim:
-
 ### Colour Scheme:
 
 ### Wireframes:
