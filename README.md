@@ -91,6 +91,50 @@ Employing [contrast grids](https://contrast-grid.eightshapes.com/), we rigorousl
 
 ### Wireframes:
 
+Prior to development, we employed wireframing techniques to carefully plan and structure the game's user interface. These wireframes served as a foundational blueprint, outlining the placement of key elements and interactions. By visualizing the layout early in the design process, we were able to refine the user experience, ensuring intuitive navigation and seamless gameplay. This systematic approach enabled us to streamline development efforts and create a polished, user-centric game interface.
+
+#### Desktop
+
+* Homepage
+
+<img src="docs/readme-images/desktop-homepage-wireframes.png">
+
+* Quiz Page
+
+<img src="docs/readme-images/desktop-quiz-wireframes.png">
+
+* Results Page
+
+<img src="docs/readme-images/desktop-results-wireframes.png">
+
+#### Tablet
+
+* Homepage
+
+<img src="docs/readme-images/tablet-homepage-wireframes.png">
+
+* Quiz Page
+
+<img src="docs/readme-images/tablet-quiz-wireframes.png">
+
+* Results Page
+
+<img src="docs/readme-images/tablet-results-homepage.png">
+
+#### Smartphone
+
+* Homepage
+
+<img src="docs/readme-images/smartphone-homepage-wireframes.png">
+
+* Quiz Page
+
+<img src="docs/readme-images/tablet-quiz-wireframes.png">
+
+* Results Page
+
+<img src="docs/readme-images/tablet-results-homepage.png">
+
 ### Typography:
 
 
