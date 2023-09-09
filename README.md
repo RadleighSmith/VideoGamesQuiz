@@ -119,7 +119,7 @@ Prior to development, we employed wireframing techniques to carefully plan and s
 
 * Results Page
 
-<img src="docs/readme-images/tablet-results-homepage.png">
+<img src="docs/readme-images/tablet-results-wireframes.png">
 
 #### Smartphone
 
@@ -129,11 +129,11 @@ Prior to development, we employed wireframing techniques to carefully plan and s
 
 * Quiz Page
 
-<img src="docs/readme-images/tablet-quiz-wireframes.png">
+<img src="docs/readme-images/smartphone-quiz-wireframes.png">
 
 * Results Page
 
-<img src="docs/readme-images/tablet-results-homepage.png">
+<img src="docs/readme-images/smartphone-results-wireframes.png">
 
 ### Typography:
 
