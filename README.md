@@ -137,6 +137,7 @@ Prior to development, we employed wireframing techniques to carefully plan and s
 
 ### Typography:
 
+The typography in our game is characterized by a clean and modern aesthetic, exuding a sense of clarity and readability. We chose 'Manrope' and 'Syne Mono' from Google Fonts to strike a balance between professionalism and a touch of playfulness. This combination not only ensures visual coherence but also enhances the overall user experience, contributing to a polished and engaging interface.
 
 ## Features
 
