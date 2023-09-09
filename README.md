@@ -22,12 +22,34 @@ Welcome to the Video Game Quiz! This exciting web application is your gateway to
 
 ## Planning
 
-
 ### Target Audience:
+
+This quiz game is designed for individuals who enjoy testing their general knowledge and trivia skills in an interactive and engaging format. The game is suitable for a diverse range of players, including those who are looking for a fun way to pass the time, challenge their memory, or simply learn new facts. With varying levels of difficulty, it caters to both casual players and trivia enthusiasts.
+
+#### Key Audience Characteristics:
+
+* General knowledge enthusiasts
+
+* Casual gamers looking for a fun challenge
+
+* Individuals seeking to expand their trivia knowledge
+
+* Anyone looking for an engaging way to pass the time
+
+#### Age Group:
+
+* Suitable for teenagers and adults
+
+#### Accessibility:
+
+* User-friendly interface for players of all experience levels
+
+* Mobile-friendly for on-the-go gaming
+
 
 ### User Goals:
 
-### User stories
+### User stories:
 
 ### Website Aim:
 
