@@ -190,6 +190,18 @@ The quiz game is primarily built using a combination of HTML, CSS, and JavaScrip
 
 ## Deployment
 
+I deployed the game on GitHub Pages using the following method:
+
+1. From my project [repository](https://github.com/RadleighSmith/video-games-quiz), navigate to the settings tab.
+
+2. From the left-hand menu, select the pages option.
+
+3. From the source section drop-down menu, select the Main Branch.
+
+4. Once the main Branch has been selected, A message will appear and indicate a successful deployment to GitHub pages. A link will also be provided to the game.
+
+Please find the live game via this URL - [Video Games Quiz](https://radleighsmith.github.io/video-games-quiz/)
+
 ## Media
 
 ## Credits 
