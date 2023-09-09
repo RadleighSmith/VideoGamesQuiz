@@ -4,6 +4,20 @@
 
 ## Contents
 
+[Planning](https://github.com/RadleighSmith/video-game-quiz#planning)
+
+[Features](https://github.com/RadleighSmith/video-game-quiz#features)
+
+[Testing](https://github.com/RadleighSmith/video-game-quiz#testing)
+
+[Languages](https://github.com/RadleighSmith/video-game-quiz#languages)
+
+[Deployment](https://github.com/RadleighSmith/video-game-quiz#deployment)
+
+[Media](https://github.com/RadleighSmith/video-game-quiz#media)
+
+[Credits](https://github.com/RadleighSmith/video-game-quiz#credits)
+
 ## Planning
 
 
