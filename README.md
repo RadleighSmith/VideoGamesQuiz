@@ -49,7 +49,31 @@ This quiz game is designed for individuals who enjoy testing their general knowl
 
 ### User Goals:
 
+* Users aim to evaluate and challenge their general knowledge across various topics.
+
+* Users strive to learn new information and interesting facts while playing the game.
+
+* Users seek entertainment and enjoyment through interactive gameplay and engaging trivia questions.
+
+* Users aspire to achieve high scores and improve their performance with each game.
+
+* Some users may have the goal of competing with friends or family members to see who can score the highest.
+
+* Users want the option to choose a difficulty level that matches their knowledge level, whether they prefer an easy warm-up or a challenging quiz.
+
+* Users may want to keep track of their progress, such as the number of correct answers and their overall performance.
+
+* Users look for a fun and engaging way to pass the time.
+
+* Users expect an intuitive and user-friendly interface that makes it easy to navigate and interact with the game.
+
 ### User stories:
+
+* As a casual player, I want to have different difficulty levels available, so I can enjoy the game at a pace that suits my knowledge level.
+
+* As a learner, I want to receive immediate feedback on my answers to help me understand which questions I answered correctly or incorrectly.
+
+* As a competitive player, I want to be able to see my overall score and track my progress over time to challenge myself to improve.
 
 ### Website Aim:
 
