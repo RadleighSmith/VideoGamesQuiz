@@ -133,7 +133,7 @@ p {
 .counter {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #ffffff;
     padding: 10px;
 }
 
@@ -148,15 +148,15 @@ p {
 }
 
 .correct-circle {
-    background-color: green;
+    background-color: #008000;
 }
 
 .incorrect-circle {
-    background-color: red;
+    background-color: #ff0000;
 }
 
 .counter-circle span {
-    color: white;
+    color: #ffffff;
     font-weight: bold;
 }
 
