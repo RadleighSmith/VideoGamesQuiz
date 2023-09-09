@@ -77,6 +77,18 @@ This quiz game is designed for individuals who enjoy testing their general knowl
 
 ### Colour Scheme:
 
+The quiz game features a palette inspired by a soothing blend of colors. The predominant shade, #7CB9E8, envelops the interface in a calming cerulean blue, evoking a sense of tranquility and curiosity. Complemented by accents of #FEFFC3, a gentle pastel yellow, and #B074CA, a subtle lavender, the scheme achieves a harmonious balance. 
+
+The crisp #FFFFFF serves as the canvas, ensuring optimal readability and a clean, inviting backdrop. Finally, #000000, a classic black, introduces depth and contrast, providing a sturdy foundation for text and interactive elements. Together, these carefully chosen hues not only enhance the game's visual appeal but also contribute to a user-friendly and immersive gaming experience.
+
+<img src = "docs/readme-images/colormind-screenshot.png">
+
+Site credit : http://colormind.io/
+
+Employing [contrast grids](https://contrast-grid.eightshapes.com/), we rigorously examined each color combination to ensure optimal readability and visual appeal. By adhering to this thoughtful approach, we have created a visually engaging and user-friendly interface that caters to a diverse audience. This attention to detail reflects our commitment to providing an inclusive and enjoyable experience for all players.
+
+<img src = "docs/readme-images/contrast-grid-screenshot.png">
+
 ### Wireframes:
 
 ### Typography:
