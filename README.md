@@ -1,5 +1,7 @@
 # Video Games Quiz
 
+Welcome to the Video Game Quiz! This exciting web application is your gateway to a world of gaming knowledge. Whether you're a seasoned gamer or just starting your gaming journey, our quiz will put your gaming expertise to the test. Explore questions on your favourite video games, characters, and gaming history. Challenge your friends to see who's the ultimate gaming guru. Get ready to embark on a gaming adventure and show off your gaming prowess.
+
 <img src="docs/readme-images/responsive-image.png">
 
 ## Contents
