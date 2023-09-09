@@ -171,6 +171,8 @@ Our quiz game boasts a range of engaging features designed to provide an interac
 
 ## Testing
 
+Testing plays a pivotal role in ensuring the seamless performance and quality of our video games quiz. Our testing process encompasses a rigorous examination of various aspects specific to gaming. This includes evaluating the accuracy of questions related to video game titles, characters, and milestones. We also conduct thorough checks on interactive elements, ensuring smooth functionality across different gaming platforms and devices. Comprehensive playtesting is carried out to validate game mechanics and address any potential gameplay issues. We aim to deliver a video games quiz that is both informative and enjoyable for all gaming enthusiasts.
+
 ### Light House  
 
 ### Functional testing
