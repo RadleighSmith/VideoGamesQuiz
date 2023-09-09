@@ -4,19 +4,19 @@
 
 ## Contents
 
-[Planning](https://github.com/RadleighSmith/video-game-quiz#planning)
+[Planning](https://github.com/RadleighSmith/video-games-quiz#planning)
 
-[Features](https://github.com/RadleighSmith/video-game-quiz#features)
+[Features](https://github.com/RadleighSmith/video-games-quiz#features)
 
-[Testing](https://github.com/RadleighSmith/video-game-quiz#testing)
+[Testing](https://github.com/RadleighSmith/video-games-quiz#testing)
 
-[Languages](https://github.com/RadleighSmith/video-game-quiz#languages)
+[Languages](https://github.com/RadleighSmith/video-games-quiz#languages)
 
-[Deployment](https://github.com/RadleighSmith/video-game-quiz#deployment)
+[Deployment](https://github.com/RadleighSmith/video-games-quiz#deployment)
 
-[Media](https://github.com/RadleighSmith/video-game-quiz#media)
+[Media](https://github.com/RadleighSmith/video-games-quiz#media)
 
-[Credits](https://github.com/RadleighSmith/video-game-quiz#credits)
+[Credits](https://github.com/RadleighSmith/video-games-quiz#credits)
 
 ## Planning
 
