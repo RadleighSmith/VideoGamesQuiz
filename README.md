@@ -143,8 +143,31 @@ The typography in our game is characterized by a clean and modern aesthetic, exu
 
 ### Current features
 
+Our quiz game boasts a range of engaging features designed to provide an interactive and enjoyable experience for players. Key functionalities include:
+
+* Adjustable Difficulty Levels: Tailor the challenge to your knowledge level with options for easy, medium, and hard quizzes.
+
+* Adjustable Question Quantity: Choose the amount of questions you recieve.
+
+* Real-time Feedback: Receive instant feedback on your answers, allowing you to learn and improve as you play.
+
+* Score Tracking: Keep tabs on your progress with a live score counter, providing a sense of achievement and competition.
+
+* Replayability: Easily replay the quiz to further hone your knowledge.
+
+* Responsive Design: Enjoy seamless gameplay on both desktop and mobile devices for flexibility in gaming.
+
+* Intuitive Interface: Navigate the game effortlessly with a user-friendly layout, ensuring an enjoyable experience for all players.
+
+* Expansive Question Database: Using [Open Triva database](https://opentdb.com/) the game is able to continuously update and expand the question database to offer fresh and diverse content.
+
 ### Future Features
 
+* Scoreboard: Share your results on a scoreboard to compete with friends, family and other users.
+
+* Social Integration: Share your quiz results on social media platforms or challenge friends to beat your score.
+
+* Time Challenges: Implement timed quizzes for an extra layer of excitement and urgency.
 
 ## Testing
 
