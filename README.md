@@ -370,4 +370,35 @@ Please find the live game via this URL - [Video Games Quiz](https://radleighsmit
 
 ## Media
 
+Please find a list of all the images used with their respective owner.
+
+| Image |  Image Credit |
+| ------------- | ------------- |
+| [main-heading.png](assets/images/main-heading.png)| [Text Craft](https://textcraft.net/) |
+| [background.png](assets/images/background.png)| [Hiten666](https://tinyurl.com/2kwzr726)  |
+| [mario-and-luigi.png](assets/images/mario-and-luigi.png) | [Nibroc-Rock](https://www.deviantart.com/nibroc-rock) |
+
+I used [Optimizilla](https://imagecompressor.com/) to compress the image sizes.
+
 ## Credits 
+
+* The [Open Triva database](https://opentdb.com/) was used to populate the questions and answers
+
+* [Balsamiq](https://balsamiq.com/) was used for creating the wireframes.
+
+* Fonts used across the site are from [Google Fonts](https://fonts.google.com/)
+
+### Thank you
+
+* Code Institute
+
+    I would like to extend my heartfelt gratitude to the entire Code Institute team for their unwavering inspiration in my journey towards becoming a full-stack software developer. The impeccably delivered lessons and their ongoing support have been invaluable, and I deeply appreciate all that they do.
+
+* Richard Wells - Code Institute Mentor.
+
+    Richard has proven to be an invaluable resource throughout my learning journey. JavaScript presented, and continues to present, a challenging learning curve for me. However, Richard has consistently guided me through examples, ensuring I grasp each concept thoroughly. I am immensely grateful to Richard for dedicating his time to assist me. Thank you once again.
+
+## Disclaimer
+
+The content and images on this website are for educational purposes only.
+
