@@ -25,6 +25,7 @@ let correctCount = 0;
 let incorrectCount = 0;
 let acceptInput = true;
 
+let totalQuestions = [];
 let questions = [];
 
 
