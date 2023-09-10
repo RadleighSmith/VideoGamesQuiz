@@ -189,7 +189,19 @@ After completing the quiz, users will be directed to the results page where they
 
 Testing plays a pivotal role in ensuring the seamless performance and quality of our video games quiz. Our testing process encompasses a rigorous examination of various aspects specific to gaming. This includes evaluating the accuracy of questions related to video game titles, characters, and milestones. We also conduct thorough checks on interactive elements, ensuring smooth functionality across different gaming platforms and devices. Comprehensive playtesting is carried out to validate game mechanics and address any potential gameplay issues. We aim to deliver a video games quiz that is both informative and enjoyable for all gaming enthusiasts.
 
-### Light House  
+### Light House 
+
+Ensuring a seamless user experience is a top priority for our quiz game. To achieve this, we tested our application using Google's Lighthouse tool. Lighthouse evaluates various aspects including performance, accessibility, SEO, and best practices. By subjecting our quiz to Lighthouse tests, we gain valuable insights into areas that may require enhancement. This includes identifying accessibility issues for users with disabilities, optimizing page load times, and adhering to industry best practices.
+
+Upon pushing the quiz through the lighthouse tool, it was noticed that the file size for the background was causing load times to be too high. Using [Optimizilla](https://imagecompressor.com/) we managed to compress the image by 77% giving us these results:
+
+* Desktop
+
+<img src = "docs/readme-images/lighthouse-desktop.png">
+
+* Mobile
+
+<img src = "docs/readme-images/lighthouse-mobile.png">
 
 ### Functional testing
 
