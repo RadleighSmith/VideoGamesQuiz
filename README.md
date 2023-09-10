@@ -275,12 +275,80 @@ After pushing this fix, we received this result for JSHint.
 
 <img src = "docs/readme-images/js-validation-after.png">
 
-### Bugs
+### Bugs:
+
+***
+
+#### Issue: 
+
+Upon game initiation, the answers failed to display properly.
+
+#### Resolution:
+
+Utilizing Google Dev Tools, I identified that the div was being removed. To address this, I organized the answers under a dedicated parent div, assigned it an ID of "answer-area," and established a corresponding variable in the script file. This allowed precise DOM targeting for adding or removing the "hide" class.
+
+#### Outcome:
+
+The answers now appear correctly on the quiz page.
+
+***
+
+#### Issue: 
+
+Post-quiz completion, the question and answers persisted instead of being hidden.
+
+#### Resolution:
+
+I relocated the constant variable from the startGame function to the top of the script file for broader accessibility. This adjustment enabled effective DOM manipulation to control the visibility of questions and answers as needed.
 
 
+#### Outcome:
+
+The results page now displays as intended.
+
+***
+
+#### Issue:
+There was an issue where the question counter failed to increment.
+
+#### Resolution:
+To address this, I introduced a variable that directly targeted the element using the DOM.
+
+#### Outcome:
+The question counter now accurately counts and displays the progress.
+
+*** 
+
+#### Issue:
+There was an issue where the header image was causing the rest of the quiz content to scale incorrectly.
+
+#### Fix:
+To address this, I directly targeted the image in the CSS file using the max-width property.
+
+#### Outcome:
+The quiz content now scales appropriately without being affected by the header image.
+
+***
+
+#### Issue:
+An issue arose where the instructions page button was not hiding as intended.
+
+#### Fix:
+To resolve this issue, I moved the ID from the button to the div containing the button. This adjustment ensured that the button displays as intended, and its visibility can be controlled effectively.
+
+#### Outcome:
+The instructions page button now hides and displays correctly, aligning with the intended behavior.
+
+***
 
 ### Unfixed Bugs
 
+
+Issue:
+The background shifts when the SweetAlert 2 popup appears.
+
+Issue:
+The hover effect on buttons does not reset on touch screen devices.
 
 ## Languages
 
