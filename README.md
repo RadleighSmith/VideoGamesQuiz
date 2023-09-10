@@ -159,7 +159,7 @@ Our quiz game boasts a range of engaging features designed to provide an interac
 
 * Intuitive Interface: Navigate the game effortlessly with a user-friendly layout, ensuring an enjoyable experience for all players.
 
-* Expansive Question Database: Using [Open Triva database](https://opentdb.com/) the game is able to continuously update and expand the question database to offer fresh and diverse content.
+* Expansive Question Database: Using [Open Triva database](https://opentdb.com/) external API the game is able to continuously update and expand the question database to offer fresh and diverse content.
 
 This is the homepage where users can select their preferred quiz length and difficulty level. Additionally, users can access instructions on how to play the game by clicking on the 'Instructions' button
 
