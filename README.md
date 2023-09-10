@@ -388,6 +388,10 @@ I used [Optimizilla](https://imagecompressor.com/) to compress the image sizes.
 
 * Fonts used across the site are from [Google Fonts](https://fonts.google.com/)
 
+* [Favicon](https://favicon.io/) for the tab icon.
+
+* [SweetAlert2](https://sweetalert2.github.io/) external library for the incorrect and correct popups
+
 ### Thank you
 
 * Code Institute
