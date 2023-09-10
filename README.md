@@ -251,9 +251,33 @@ Upon pushing the quiz through the lighthouse tool, it was noticed that the file 
 * Confirmed that the "Return to Homepage" button directs the user back to the homepage.
 * Validated that the page layout and design remain consistent across different screen sizes and devices.
 
-### Validator testing
+### Validator testing            
+
+#### W3C HTML Validation Service
+
+Before deployment, we ensured the validity of our index.html file by passing it through the W3C HTML validation tool with no errors, guaranteeing adherence to web standards and optimal compatibility across browsers.
+
+<img src = "docs/readme-images/html-validation.png">
+
+#### WCC Jigsaw CSS Validation Service
+
+Additionally, our stylesheet underwent validation using the CSS Jigsaw tool, ensuring impeccable code quality and compatibility across various browsers and platforms passing with no errors.
+
+<img src = "docs/readme-images/css-validation.png">
+
+#### JSHint JavaScript Code Quaility Tool
+
+However, when passing our script file through JSHint, we noticed that the totalQuestions and Swal where undefined, to fix this we defined totalQuestions in a variable in the top of the page, but Swal is from [SweetAlerts2](https://sweetalert2.github.io/) external library.
+
+<img src = "docs/readme-images/js-validation-before.png">
+
+After pushing this fix, we received this result for JSHint.
+
+<img src = "docs/readme-images/js-validation-after.png">
 
 ### Bugs
+
+
 
 ### Unfixed Bugs
 
