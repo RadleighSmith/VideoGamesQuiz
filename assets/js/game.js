@@ -159,7 +159,7 @@ function answerResponse() {
                 Swal.fire({
                     position: 'center',
                     title: "You're Correct",
-                    text: "You got it right!",
+                    text: `${currentQuestion["answers" + currentQuestion.answer]} was the correct answer!`,
                     icon: 'success',
                     allowOutsideClick: false,
                     showConfirmButton: false,
