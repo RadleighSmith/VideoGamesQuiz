@@ -13,7 +13,6 @@ const answerCountersArea = document.getElementById("answer-counters-area");
 const resultsPage = document.getElementById("results");
 const resultsPageBtns = document.getElementById("results-page-btns");
 const score = document.getElementById("score");
-const answerElements = answerOptions.querySelectorAll('.answers');
 const resultsImg = document.getElementById('results-img');
 const replayBtn = document.getElementById('replay');
 const returnBtn = document.getElementById('return');
@@ -210,8 +209,6 @@ replayBtn.addEventListener("click", () => {
 
 function toggleDisplay(elements) {
     elements.forEach((element) =>
-        element.classList.contains("hide")
-            ? element.classList.remove("hide")
-            : element.classList.add("hide")
+        element.classList.contains("hide") ? element.classList.remove("hide") : element.classList.add("hide")
     );
 }
