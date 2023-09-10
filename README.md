@@ -189,6 +189,24 @@ After completing the quiz, users will be directed to the results page where they
 
 Testing plays a pivotal role in ensuring the seamless performance and quality of our video games quiz. Our testing process encompasses a rigorous examination of various aspects specific to gaming. This includes evaluating the accuracy of questions related to video game titles, characters, and milestones. We also conduct thorough checks on interactive elements, ensuring smooth functionality across different gaming platforms and devices. Comprehensive playtesting is carried out to validate game mechanics and address any potential gameplay issues. We aim to deliver a video games quiz that is both informative and enjoyable for all gaming enthusiasts.
 
+I conducted extensive testing throughout the development process on a diverse range of devices and browsers.
+
+Macbook Pro 14" (M2) Safari, - Chrome and Firefox
+
+Windows PC (Windows 11) on a 1440p 27" monitor - Chrome, Firefox and Edge
+
+iPad Air (5th Gen) - Safari and Chrome
+
+iPad Pro (4th Gen) - Safari and Chrome
+
+iPhone 13 Pro Max - Safari and Chrome
+
+iPhone 11 - Safari and Chrome
+
+In cases where I didn't have direct access to a specific device, I leveraged Google Chrome dev tools to emulate the desired environment. This allowed me to conduct real-time testing in responsive dimensions, ensuring a seamless experience across a wide range of user scenarios.
+
+<img src = "docs/readme-images/devtools-screenshot.png">
+
 ### Light House 
 
 Ensuring a seamless user experience is a top priority for our quiz game. To achieve this, we tested our application using Google's Lighthouse tool. Lighthouse evaluates various aspects including performance, accessibility, SEO, and best practices. By subjecting our quiz to Lighthouse tests, we gain valuable insights into areas that may require enhancement. This includes identifying accessibility issues for users with disabilities, optimizing page load times, and adhering to industry best practices.
@@ -204,6 +222,34 @@ Upon pushing the quiz through the lighthouse tool, it was noticed that the file 
 <img src = "docs/readme-images/lighthouse-mobile.png">
 
 ### Functional testing
+
+#### Home Page
+
+* Verified that all interactive elements, such as buttons and dropdown menus, are clickable and responsive.
+* Tested the question length selection dropdown to ensure it displays available options and allows users to make a selection.
+* Confirmed that the difficulty level selection dropdown functions correctly, providing different levels to choose from.
+* Checked if the "Start" button triggers the quiz game, logs an array to the console, and directs the user to the quiz based on their selections.
+* Validated that the "Instructions" button displays relevant guidance on how to play the game and when return is selected it returns the users to the homepage.
+* Ensured that the page layout and design remain consistent across various screen sizes and devices.
+
+#### Quiz Page
+
+* Verified that the question is displayed prominently at the top of the page.
+* Tested if the answer choices are presented clearly and are selectable.
+* Confirmed that only one answer choice can be selected per question.
+* Checked if the question counter displays the correct progress (e.g., "Question 1/10").
+* Confirmed that the questions are placed into a random order in an array before being displayed.
+* Validated that the correct answer is displayed after selection, along with appropriate feedback (e.g., "Correct" or "Incorrect").
+* Tested if the score counters accurately track the number of correct and incorrect answers.
+* Verified that the game progresses through all questions and displays the final score page.
+* Ensured that the layout and design remain consistent across different screen sizes and devices.
+
+#### Results Page
+
+* Verified that the final score is displayed prominently in the correct position.
+* Tested if the "Replay" button allows the user to start a new game with the same settings.
+* Confirmed that the "Return to Homepage" button directs the user back to the homepage.
+* Validated that the page layout and design remain consistent across different screen sizes and devices.
 
 ### Validator testing
 
