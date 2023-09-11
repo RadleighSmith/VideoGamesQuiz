@@ -417,8 +417,7 @@ With this fix, answers containing special characters are now displayed accuratel
 
 ### Unfixed Bugs
 
-Issue:
-The hover effect on buttons does not reset on touch screen devices.
+At present, there are no known bugs in the application. It has undergone rigorous testing to ensure a smooth user experience.
 
 ## Languages
 
