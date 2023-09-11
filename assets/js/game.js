@@ -165,7 +165,7 @@ function answerResponse() {
                     allowOutsideClick: false,
                     showConfirmButton: false,
                     timer: 2500,
-                });
+                }).then(() => getNextQuestion());;
             } else {
                 incorrectCount++;
                 document.getElementById("incorrect-count").textContent = incorrectCount;
@@ -177,11 +177,8 @@ function answerResponse() {
                     allowOutsideClick: false,
                     showConfirmButton: false,
                     timer: 2500
-                });
+                }).then(() => getNextQuestion());
             }
-            setTimeout(() => {
-                getNextQuestion();
-            }, 2500);
         });
     });
 }
