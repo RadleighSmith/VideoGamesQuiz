@@ -214,6 +214,12 @@ Our quiz game boasts a range of engaging features designed to provide an interac
 
 ***
 
+* Should a user navigate to a non-existent page, they will encounter a customized 404 Error Page with a friendly message, image and an option to return to the home page.
+
+<img src = "docs/readme-images/error-404-screenshot.png">
+
+***
+
 ### Future Features
 
 * Scoreboard: Share your results on a scoreboard to compete with friends, family and other users.
@@ -441,6 +447,7 @@ Please find a list of all the images used with their respective owner.
 | [main-heading.png](assets/images/main-heading.png)| [Text Craft](https://textcraft.net/) |
 | [background.png](assets/images/background.png)| [Hiten666](https://tinyurl.com/2kwzr726)  |
 | [mario-and-luigi.png](assets/images/mario-and-luigi.png) | [Nibroc-Rock](https://www.deviantart.com/nibroc-rock) |
+| [mario-sad.png](assets/images/mario-sad.png) | [Nibroc-Rock](https://www.deviantart.com/nibroc-rock) |
 
 I used [Optimizilla](https://imagecompressor.com/) to compress the image sizes.
 

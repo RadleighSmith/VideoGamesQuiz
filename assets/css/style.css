@@ -194,6 +194,22 @@ p {
     background-color: #7CB9E8;
 }
 
+/* 404 page styling */
+
+#error-page-image {
+    width: 30%;
+}
+
+.error-page-content {
+    text-align: center;
+}
+
+.error-page-content h2 {
+    background-color: #ffffff;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+}
 
 /* Media Queries */
 
@@ -241,7 +257,6 @@ p {
     #question-number {
         width: 60%;
     }
-
 }
 
 /* for screen sizes 500px and below */
@@ -256,8 +271,6 @@ p {
     .quiz-options-grid {
         grid-template-columns: 1fr;
     }
-
-
 }
 
 /* for screen sizes 400px and below */
