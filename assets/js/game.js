@@ -165,6 +165,7 @@ function answerResponse() {
                     allowOutsideClick: false,
                     showConfirmButton: false,
                     timer: 2500,
+                    heightAuto: false,
                 }).then(() => getNextQuestion());;
             } else {
                 incorrectCount++;
@@ -176,7 +177,8 @@ function answerResponse() {
                     icon: 'error',
                     allowOutsideClick: false,
                     showConfirmButton: false,
-                    timer: 2500
+                    timer: 2500,
+                    heightAuto: false,
                 }).then(() => getNextQuestion());
             }
         });
