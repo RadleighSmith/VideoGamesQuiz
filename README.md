@@ -379,6 +379,13 @@ With this fix, the background now remains stable when the SweetAlert 2 pop-up is
 
 ***
 
+#### Issue: The hover effect on buttons was persisting on touch devices.
+
+#### Fix: Added a media query for smaller screens that removes the styling of the hover effect.
+
+#### Outcome: The hover effect now behaves as expected on touch devices, providing a smoother user experience.
+
+***
 #### Issue:
 Answers with special characters were not being decoded correctly when displayed in the SweetAlert2 popup.
 

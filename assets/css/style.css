@@ -216,6 +216,16 @@ p {
     .results-content {
         margin: 10px;
     }
+
+    .answers:hover {
+        transform: none;
+        background-color: #b074ca;
+    }
+
+    .btn:hover {
+        transform: none;
+        background-color: #ffffff;
+    }
 }
 
 /* For screen sizes 600px and below */
