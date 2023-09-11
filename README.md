@@ -161,25 +161,48 @@ Our quiz game boasts a range of engaging features designed to provide an interac
 
 * Expansive Question Database: Using [Open Triva database](https://opentdb.com/) external API the game is able to continuously update and expand the question database to offer fresh and diverse content.
 
-This is the homepage where users can select their preferred quiz length and difficulty level. Additionally, users can access instructions on how to play the game by clicking on the 'Instructions' button
+***
+
+* This is the homepage where users can select their preferred quiz length and difficulty level.
+* Additionally, users can access instructions on how to play the game by clicking on the 'Instructions' button
 
 <img src="docs/readme-images/desktop-homepage.png">
 
-The instructions page provides a comprehensive guide on how to navigate and enjoy the quiz game, ensuring that users are well-prepared to embark on their trivia adventure.
+***
+
+* The instructions page provides a comprehensive guide on how to navigate and enjoy the quiz game, ensuring that users are well-prepared to embark on their trivia adventure.
 
 <img src="docs/readme-images/desktop-instructions.png">
 
-Once on the quiz game page, users will be presented with a series of questions tailored to their chosen length and difficulty level, users are also able to track their current question number, correct and incorrect scores, providing an engaging and interactive experience.
+***
+
+* Once on the quiz game page, users will be presented with a series of questions tailored to their chosen length and difficulty level
+* Users are also able to track their current question number, correct and incorrect scores, providing an engaging and interactive experience.
 
 <img src="docs/readme-images/desktop-quizpage.png">
 
-After completing the quiz, users will be directed to the results page where they can view their final score. Users will also have the option to replay the quiz or return to the homepage for another round of challenging questions.
+***
+
+* After completing the quiz, users will be directed to the results page where they can view their final score. 
+* Users will also have the option to replay the quiz or return to the homepage for another round of challenging questions.
 
 <img src="docs/readme-images/desktop-results.png">
 
-* The game includes error handling, providing informative messages to users in case of any unexpected issues during gameplay.
+***
+
+* The game employs the SweetAlert2 library to display visually appealing and user-friendly pop-up messages for correct and incorrect answers, enhancing the overall user experience.
+
+<img src = "docs/readme-images/correct-screenshot.png">
+
+<img src = "docs/readme-images/incorrect-screenshot.png">
+
+***
+
+* The game includes error handling, providing informative messages to users using sweetAlerts2 in case of any unexpected issues during gameplay.
 
 <img src = "docs/readme-images/error-screenshot.png">
+
+***
 
 ### Future Features
 
