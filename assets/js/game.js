@@ -17,7 +17,6 @@ const resultsImg = document.getElementById('results-img');
 const replayBtn = document.getElementById('replay');
 const returnBtn = document.getElementById('return');
 
-
 let answers = Array.from(document.getElementsByClassName("answers"));
 let currentQuestion = {};
 let questionCounter = 0;
@@ -28,8 +27,9 @@ let acceptInput = true;
 let totalQuestions = [];
 let questions = [];
 
-
-/** Event Listener to show instructions page and hide quiz selection homepage */
+/** 
+ * Event Listener to show instructions page and hide quiz selection homepage 
+ */
 instructionsBtnHomepage.children[0].addEventListener("click", () => {
     toggleDisplay([
         instructionsBtnHomepage,
@@ -39,7 +39,9 @@ instructionsBtnHomepage.children[0].addEventListener("click", () => {
     ]);
 });
 
-/** Event Listener to return to quiz selection homepage and hide instructions page */
+/** 
+ * Event Listener to return to quiz selection homepage and hide instructions page
+ */
 instructionBtn.addEventListener("click", () => {
     toggleDisplay([
         instructionsBtnHomepage,
@@ -49,9 +51,9 @@ instructionBtn.addEventListener("click", () => {
     ]);
 });
 
-// Trivia Database API
-/** Function to construct the Quiz API URL based on user-selected options */
-
+/** 
+ * Function to construct the Quiz API URL based on user-selected options 
+ */
 function getQuestionsData() {
     const quest = questChoice.options[questChoice.selectedIndex].id;
     const diff = diffChoice.options[diffChoice.selectedIndex].id;
@@ -59,11 +61,12 @@ function getQuestionsData() {
     return `https://opentdb.com/api.php?amount=${quest}&category=15&difficulty=${diff}&type=multiple`;
 }
 
-/** Function to retrive the data from the Triva DB using the user-selected options
- * it then formats the question and splices the incorrect and correct answers
- * together whist randomising the correct answers position.
+/** 
+ * Function to retrieve quiz data from an API, format the questions, and initiate the game.
+ * It fetches questions, randomly assigns correct answers with incorrect answers, 
+ * and maps them to a formatted object.
+ * If questions are available, it starts the game; otherwise, it displays an error message.;
  */
-
 function getGameData() {
     fetch(getQuestionsData())
         .then(response => response.json())
@@ -100,8 +103,9 @@ function getGameData() {
         });
 }
 
-/** Function to start the game when the user clicks start, it will reset all 
- * the hud elements to 0 */
+/** 
+ * Function to initialize the game, reset counters, and display necessary elements.
+*/
 function startGame() {
     totalQuestions = [...questions];
     questionCounter = 0;
@@ -116,9 +120,12 @@ function startGame() {
         answerCountersArea,
         ...quizHomepageElements,
     ]);
-
 }
-/** Function to get the next question  or end the game once no questions are left */
+
+/**
+ * Function to get the next question or end the game if no questions remain.
+ * Updates the question counter and displays the next question.
+ */
 function getNextQuestion() {
     if (totalQuestions.length == 0) {
         toggleDisplay([
@@ -148,13 +155,20 @@ function getNextQuestion() {
     }
     answerResponse();
 }
-// Event Listener to start game
 
+/**
+ * Event listener for the start button.
+ * Initiates the game by fetching and loading questions.
+ */
 startButton.addEventListener('click', () => {
     getGameData();
 
 });
 
+/**
+ * Function to handle user's answer selection.
+ * Triggers feedback and proceeds to next question.
+ */
 function answerResponse() {
     answers.forEach(answer => {
         answer.addEventListener("click", (event) => {
@@ -175,7 +189,7 @@ function answerResponse() {
                     showConfirmButton: false,
                     timer: 2500,
                     heightAuto: false,
-                }).then(() => getNextQuestion());;
+                }).then(() => getNextQuestion());
             } else {
                 incorrectCount++;
                 document.getElementById("incorrect-count").textContent = incorrectCount;
@@ -194,6 +208,10 @@ function answerResponse() {
     });
 }
 
+/**
+ * Event listener to handle the return button click on the results page.
+ * Toggles display to show the main quiz page and hide results.
+ */
 returnBtn.addEventListener("click", () => {
     toggleDisplay([
         resultsImg,
@@ -204,6 +222,10 @@ returnBtn.addEventListener("click", () => {
     ]);
 });
 
+/**
+ * Event listener to handle the replay button click on the results page.
+ * Starts a new game and toggles display to show the main quiz page and hide results.
+ */
 replayBtn.addEventListener("click", () => {
     getGameData();
     toggleDisplay([
@@ -214,8 +236,11 @@ replayBtn.addEventListener("click", () => {
         instructionsBtnHomepage,
     ]);
 });
-/** Function to toggle the diplay of divs throughout the game */
 
+/**
+ * Function to show and hide elements depending on current state
+ * @param {HTMLElements} elements - items to toggle
+ */
 function toggleDisplay(elements) {
     elements.forEach((element) =>
         element.classList.contains("hide") ? element.classList.remove("hide") : element.classList.add("hide")
