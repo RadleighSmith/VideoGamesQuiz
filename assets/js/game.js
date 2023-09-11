@@ -30,7 +30,7 @@ let questions = [];
 
 
 /** Event Listener to show instructions page and hide quiz selection homepage */
-instructionsBtnHomepage.addEventListener("click", () => {
+instructionsBtnHomepage.children[0].addEventListener("click", () => {
     toggleDisplay([
         instructionsBtnHomepage,
         instructionsPage,

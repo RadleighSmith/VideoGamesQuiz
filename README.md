@@ -220,6 +220,14 @@ Our quiz game boasts a range of engaging features designed to provide an interac
 
 ***
 
+Issue: The instructions button on the homepage was not triggering the event listener correctly. Instead, the entire div was causing the event to fire.
+
+Fix: To address this, I implemented a modification by directly targeting the button element using .children[0]. This ensures that the event listener functions as intended, providing a smoother user experience.
+
+Outcome: With this fix in place, users can now click the instructions button without encountering any unexpected behavior, enhancing the overall usability of the application.
+
+***
+
 ### Future Features
 
 * Scoreboard: Share your results on a scoreboard to compete with friends, family and other users.
