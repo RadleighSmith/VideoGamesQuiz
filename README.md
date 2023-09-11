@@ -341,11 +341,19 @@ The instructions page button now hides and displays correctly, aligning with the
 
 ***
 
+#### Issue:
+The background would move when the SweetAlert 2 pop-up appeared.
+
+#### Fix:
+I added heightAuto: false to the Swal.fire function inside the if statement. This prevented the background from shifting.
+
+#### Outcome:
+With this fix, the background now remains stable when the SweetAlert 2 pop-up is displayed, enhancing the overall user experience.
+
+***
+
 ### Unfixed Bugs
 
-
-Issue:
-The background shifts when the SweetAlert 2 popup appears.
 
 Issue:
 The hover effect on buttons does not reset on touch screen devices.
