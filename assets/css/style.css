@@ -26,7 +26,7 @@ body {
 }
 
 .spacing-top {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 p {
@@ -35,7 +35,7 @@ p {
 
 .border {
     border: 5px solid #000000;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 /* Header */
@@ -52,7 +52,7 @@ p {
     height: 70vh;
     width: 70vw;
     border: 5px solid #000000;
-    border-radius: 25px;
+    border-radius: 1.562rem;
 
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@ p {
     background-color: #ffffff;
     width: 60%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 
@@ -92,10 +92,10 @@ p {
     margin: 0 auto;
     width: 90%;
     height: auto;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #ffffff;
     border: 5px solid #000000;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .quiz-options-grid {
@@ -106,7 +106,7 @@ p {
 .answers {
 
     margin: 5%;
-    padding: 10px;
+    padding: 0.625rem;
     text-align: left;
 
     font-family: 'Manrope', sans-serif;
@@ -127,24 +127,24 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
+    margin: 1.25px;
 }
 
 .counter {
     display: flex;
     align-items: center;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .counter-circle {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .correct-circle {
@@ -166,7 +166,7 @@ p {
     margin: 0 auto;
     text-align: center;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 #results-img img {
@@ -176,12 +176,12 @@ p {
 /* Button Styling */
 
 .btn {
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 0.625rem;
+    padding: 0.625rem;
     min-width: 20%;
     background-color: #ffffff;
     border: #000000 solid 5px;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     text-decoration: none;
     color: #000000;
     font-size: 1.2rem;
@@ -208,7 +208,7 @@ p {
     background-color: #ffffff;
     width: 60%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 /* Media Queries */
@@ -230,7 +230,7 @@ p {
     }
 
     .results-content {
-        margin: 10px;
+        margin: 0.625rem;
     }
 
     .answers:hover {
