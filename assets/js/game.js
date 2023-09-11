@@ -65,7 +65,6 @@ function getQuestionsData() {
  */
 
 function getGameData() {
-
     fetch(getQuestionsData())
         .then(response => response.json())
         .then(loadedQuestions => {
@@ -86,11 +85,22 @@ function getGameData() {
             });
             if (questions.length > 0) {
                 startGame();
-            } else {
-                console.error("Error Loading Quiz");
             }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            Swal.fire({
+                position: 'top',
+                title: "Uh Oh! Error!",
+                html: `Something went wrong, please try again`,
+                icon: 'warning',
+                showConfirmButton: false,
+                timer: 2500,
+                heightAuto: false,
+            });
         });
 }
+
 /** Function to start the game when the user clicks start, it will reset all 
  * the hud elements to 0 */
 function startGame() {

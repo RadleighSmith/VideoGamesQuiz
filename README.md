@@ -177,6 +177,10 @@ After completing the quiz, users will be directed to the results page where they
 
 <img src="docs/readme-images/desktop-results.png">
 
+* The game includes error handling, providing informative messages to users in case of any unexpected issues during gameplay.
+
+<img src = "docs/readme-images/error-screenshot.png">
+
 ### Future Features
 
 * Scoreboard: Share your results on a scoreboard to compete with friends, family and other users.
@@ -364,7 +368,6 @@ With this fix, answers containing special characters are now displayed accuratel
 ***
 
 ### Unfixed Bugs
-
 
 Issue:
 The hover effect on buttons does not reset on touch screen devices.
