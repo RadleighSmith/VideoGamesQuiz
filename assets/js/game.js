@@ -160,7 +160,7 @@ function answerResponse() {
                 Swal.fire({
                     position: 'center',
                     title: "You're Correct",
-                    text: `${currentQuestion["answers" + currentQuestion.answer]} was the correct answer!`,
+                    html: `${currentQuestion["answers" + currentQuestion.answer]} was the correct answer!`,
                     icon: 'success',
                     allowOutsideClick: false,
                     showConfirmButton: false,
@@ -173,7 +173,7 @@ function answerResponse() {
                 Swal.fire({
                     position: 'center',
                     title: "You're Incorrect",
-                    text: `The correct answer was ${currentQuestion["answers" + currentQuestion.answer]}`,
+                    html: `The correct answer was ${currentQuestion["answers" + currentQuestion.answer]}`,
                     icon: 'error',
                     allowOutsideClick: false,
                     showConfirmButton: false,

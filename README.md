@@ -352,6 +352,17 @@ With this fix, the background now remains stable when the SweetAlert 2 pop-up is
 
 ***
 
+#### Issue:
+Answers with special characters were not being decoded correctly when displayed in the SweetAlert2 popup.
+
+#### Fix:
+I replaced text: with html: in the SweetAlert2 configuration. This change ensures that the answers with special characters are decoded correctly.
+
+#### Outcome:
+With this fix, answers containing special characters are now displayed accurately in the SweetAlert2 popups.
+
+***
+
 ### Unfixed Bugs
 
 
