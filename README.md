@@ -24,7 +24,7 @@ Welcome to the Video Game Quiz! This exciting web application is your gateway to
 
 ### Target Audience:
 
-This quiz game is designed for individuals who enjoy testing their general knowledge and trivia skills in an interactive and engaging format. The game is suitable for a diverse range of players, including those who are looking for a fun way to pass the time, challenge their memory, or simply learn new facts. With varying levels of difficulty, it caters to both casual players and trivia enthusiasts.
+This quiz game is designed for individuals who enjoy testing their gaming knowledge and trivia skills in an interactive and engaging format. The game is suitable for a diverse range of players, including those who are looking for a fun way to pass the time, challenge their memory, or simply learn new facts. With varying levels of difficulty, it caters to both casual players and trivia enthusiasts.
 
 #### Key Audience Characteristics:
 
@@ -38,7 +38,7 @@ This quiz game is designed for individuals who enjoy testing their general knowl
 
 #### Age Group:
 
-* Suitable for teenagers and adults
+* Suitable for all ages.
 
 #### Accessibility:
 
@@ -69,11 +69,21 @@ This quiz game is designed for individuals who enjoy testing their general knowl
 
 ### User stories:
 
-* As a casual player, I want to have different difficulty levels available, so I can enjoy the game at a pace that suits my knowledge level.
+* As a user, I want to have different difficulty levels available, so I can enjoy the game at a pace that suits my knowledge level.
 
-* As a learner, I want to receive immediate feedback on my answers to help me understand which questions I answered correctly or incorrectly.
+* As a user, I want to find clear and concise instructions on how to play the quiz, ensuring a smooth start to the game.
 
-* As a competitive player, I want to be able to see my overall score and track my progress over time to challenge myself to improve.
+* As a user, I want to receive immediate feedback on my answers to help me understand which questions I answered correctly or incorrectly.
+
+* As a user, I want to be able to see my overall score and track my progress over time to challenge myself to improve.
+
+* As a user, I want the option to replay the quiz after completing it, so I can continue to test my knowledge and strive for a better score.
+
+* As a user, I want the quiz to present a diverse range of questions, covering various aspects of video games, ensuring an engaging and comprehensive gaming experience.
+
+* As a user, I want the application to be accessible on multiple devices, allowing me to enjoy the quiz on desktops, tablets, and mobile phones.
+
+* As a user, I want to be able to easily navigate through the quiz, with clear instructions and intuitive controls, to enhance my overall experience.
 
 ### Colour Scheme:
 
@@ -137,7 +147,7 @@ Prior to development, we employed wireframing techniques to carefully plan and s
 
 ### Typography:
 
-The typography in our game is characterized by a clean and modern aesthetic, exuding a sense of clarity and readability. We chose 'Manrope' and 'Syne Mono' from Google Fonts to strike a balance between professionalism and a touch of playfulness. This combination not only ensures visual coherence but also enhances the overall user experience, contributing to a polished and engaging interface.
+The typography in our game is characterized by a clean and modern aesthetic, exuding a sense of clarity and readability. We chose ['Manrope'](https://fonts.google.com/specimen/Manrope) and ['Syne Mono'](https://fonts.google.com/specimen/Syne+Mono) from Google Fonts to strike a balance between professionalism and a touch of playfulness. This combination not only ensures visual coherence but also enhances the overall user experience, contributing to a polished and engaging interface.
 
 ## Features
 
