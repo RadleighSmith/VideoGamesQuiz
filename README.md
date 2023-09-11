@@ -250,6 +250,8 @@ Ensuring a seamless user experience is a top priority for our quiz game. To achi
 
 Upon pushing the quiz through the lighthouse tool, it was noticed that the file size for the background was causing load times to be too high. Using [Optimizilla](https://imagecompressor.com/) we managed to compress the image by 77% giving us these results:
 
+Lighthouse flagged the 'main-heading.png' as potentially pixelated, but this image is intentionally designed to appear pixelated and it is rendered at its original size, it does not impact the user experience in any way.
+
 * Desktop
 
 <img src = "docs/readme-images/lighthouse-desktop.png">
