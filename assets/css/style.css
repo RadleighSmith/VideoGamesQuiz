@@ -288,6 +288,10 @@ p {
     .counter-circle {
         margin: 0 auto;
     }
+
+    .answers {
+        margin: 2%;
+    }
 }
 
 /* Hide Rule */
