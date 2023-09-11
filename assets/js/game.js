@@ -68,7 +68,6 @@ function getGameData() {
     fetch(getQuestionsData())
         .then(response => response.json())
         .then(loadedQuestions => {
-            console.log(loadedQuestions.results);
             questions = loadedQuestions.results.map(loadedQuestion => {
                 const formattedQuestion = {
                     question: loadedQuestion.question
