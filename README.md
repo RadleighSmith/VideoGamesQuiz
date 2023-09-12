@@ -1,6 +1,6 @@
 # Video Games Quiz
 
-Welcome to the Video Game Quiz! This exciting web application is your gateway to a world of gaming knowledge. Whether you're a seasoned gamer or just starting your gaming journey, our quiz will put your gaming expertise to the test. Explore questions on your favourite video games, characters, and gaming history. Challenge your friends to see who's the ultimate gaming guru. With dynamic questions that change each time you play, get ready to embark on a gaming adventure and show off your gaming prowess.
+Welcome to the Video Games Quiz! This exciting web application is your gateway to a world of gaming knowledge. Whether you're a seasoned gamer or just starting your gaming journey, our quiz will put your gaming expertise to the test. Explore questions on your favourite video games, characters, and gaming history. Challenge your friends to see who's the ultimate gaming guru. With dynamic questions that change each time you play, get ready to embark on a gaming adventure and show off your gaming prowess.
 
 <img src="docs/readme-images/responsive-image.png">
 
@@ -484,6 +484,8 @@ I used [Optimizilla](https://imagecompressor.com/) to compress the image sizes.
 * [Favicon](https://favicon.io/) for the tab icon.
 
 * [SweetAlert2](https://sweetalert2.github.io/) external library for the incorrect and correct popups
+
+* I found great inspiration and valuable ideas in [James Q Quick's](https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&ab_channel=JamesQQuick) YouTube tutorial series. It provided me with insightful guidance and sparked my creativity." 
 
 ### Thank you
 
