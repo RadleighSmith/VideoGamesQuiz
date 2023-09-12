@@ -336,9 +336,7 @@ After pushing this fix, we received this result for JSHint.
 
 <img src = "docs/readme-images/js-validation-after.png">
 
-### Bugs:
-
-***
+### Rectified Bugs:
 
 #### Issue: 
 
@@ -362,7 +360,6 @@ Post-quiz completion, the question and answers persisted instead of being hidden
 
 I relocated the constant variable from the startGame function to the top of the script file for broader accessibility. This adjustment enabled effective DOM manipulation to control the visibility of questions and answers as needed.
 
-
 #### Outcome:
 
 The results page now displays as intended.
@@ -370,71 +367,99 @@ The results page now displays as intended.
 ***
 
 #### Issue:
+
 There was an issue where the question counter failed to increment.
 
 #### Resolution:
+
 To address this, I introduced a variable that directly targeted the element using the DOM.
 
 #### Outcome:
+
 The question counter now accurately counts and displays the progress.
 
 *** 
 
 #### Issue:
+
 There was an issue where the header image was causing the rest of the quiz content to scale incorrectly.
 
-#### Fix:
+#### Resolution:
+
 To address this, I directly targeted the image in the CSS file using the max-width property.
 
 #### Outcome:
+
 The quiz content now scales appropriately without being affected by the header image.
 
 ***
 
 #### Issue:
+
 An issue arose where the instructions page button was not hiding as intended.
 
-#### Fix:
+#### Resolution:
+
 To resolve this issue, I moved the ID from the button to the div containing the button. This adjustment ensured that the button displays as intended, and its visibility can be controlled effectively.
 
 #### Outcome:
+
 The instructions page button now hides and displays correctly, aligning with the intended behavior.
 
 ***
 
 #### Issue:
+
 The background would move when the SweetAlert 2 pop-up appeared.
 
-#### Fix:
+#### Resolution:
+
 I added heightAuto: false to the Swal.fire function inside the if statement. This prevented the background from shifting.
 
 #### Outcome:
+
 With this fix, the background now remains stable when the SweetAlert 2 pop-up is displayed, enhancing the overall user experience.
 
 ***
 
-#### Issue: The hover effect on buttons was persisting on touch devices.
+#### Issue: 
 
-#### Fix: Added a media query for smaller screens that removes the styling of the hover effect.
+The hover effect on buttons was persisting on touch devices.
 
-#### Outcome: The hover effect now behaves as expected on touch devices, providing a smoother user experience.
+#### Resolution: 
+
+Added a media query for smaller screens that removes the styling of the hover effect.
+
+#### Outcome: 
+
+The hover effect now behaves as expected on touch devices, providing a smoother user experience.
 
 ***
 #### Issue:
+
 Answers with special characters were not being decoded correctly when displayed in the SweetAlert2 popup.
 
-#### Fix:
+#### Resolution:
+
 I replaced text: with html: in the SweetAlert2 configuration. This change ensures that the answers with special characters are decoded correctly.
 
 #### Outcome:
+
 With this fix, answers containing special characters are now displayed accurately in the SweetAlert2 popups.
 
 ***
-Issue: The instructions button on the homepage was not triggering the event listener correctly. Instead, the entire div was causing the event to fire.
 
-Fix: To address this, I implemented a modification by directly targeting the button element using .children[0]. This ensures that the event listener functions as intended, providing a smoother user experience.
+#### Issue: 
 
-Outcome: With this fix in place, users can now click the instructions button without encountering any unexpected behavior, enhancing the overall usability of the application.
+The instructions button on the homepage was not triggering the event listener correctly. Instead, the entire div was causing the event to fire.
+
+#### Resolution: 
+
+To address this, I implemented a modification by directly targeting the button element using .children[0]. This ensures that the event listener functions as intended, providing a smoother user experience.
+
+#### Outcome: 
+
+With this fix in place, users can now click the instructions button without encountering any unexpected behavior, enhancing the overall usability of the application.
 
 ***
 
